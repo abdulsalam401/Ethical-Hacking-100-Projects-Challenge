@@ -1,0 +1,9 @@
+====================================================
+SSH CREDENTIAL FOUND
+Time    : 2026-06-05 17:10:03
+Host    : 127.0.0.1:22
+Method  : password
+Username: labuser
+Secret  : password123
+====================================================
+[2026-06-05 17:17:10] SSH 127.0.0.1 -> labuser:password123

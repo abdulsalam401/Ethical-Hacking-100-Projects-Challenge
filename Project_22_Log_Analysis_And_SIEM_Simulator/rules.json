@@ -1,0 +1,37 @@
+{
+    "sql_injection": {
+        "pattern": "('.*OR.*'.*='|%27 OR %27|%27 OR 1=1|;.*--|UNION.*SELECT|' OR '1'='1|' OR 1=1|SELECT.*FROM|INSERT.*INTO|DELETE.*FROM|DROP.*TABLE|information_schema|sleep\\(|benchmark\\(|WAITFOR DELAY|1=1;|' OR 1=1 --|\\\" OR \\\"1\\\"=\\\"1|OR 1=1|AND 1=1)",
+        "severity": "HIGH",
+        "description": "SQL Injection attempt detected"
+    },
+    "path_traversal": {
+        "pattern": "\\.\\./\\.\\./|/etc/passwd|/etc/shadow|/proc/self/environ|C:\\\\Windows\\\\System32|%2e%2e%2f|%2e%2e/",
+        "severity": "HIGH",
+        "description": "Path traversal attempt detected"
+    },
+    "command_injection": {
+        "pattern": ";\\s*(ls|whoami|cat|echo|nc|bash|sh|curl|wget|id|uname|pwd|netstat|dir|type|del|rm|mkdir|ping)|&&\\s*(ls|whoami|cat|echo|nc)|\\|\\s*(ls|whoami|cat|echo)",
+        "severity": "HIGH",
+        "description": "Command injection attempt"
+    },
+    "xss": {
+        "pattern": "<script>|alert\\(|onerror=|javascript:|document\\.cookie|onload=|onmouseover=|onclick=|<iframe|onerror",
+        "severity": "MEDIUM",
+        "description": "Cross-Site Scripting (XSS) attempt"
+    },
+    "brute_force": {
+        "pattern": "Failed password|Authentication failure|Login failed|401|403|Invalid password|Access denied",
+        "severity": "MEDIUM",
+        "description": "Possible brute force login attempt - check threshold"
+    },
+    "suspicious_user_agent": {
+        "pattern": "curl|wget|python-requests|perl|ruby|nmap|masscan|sqlmap|nikto|dirb|gobuster|Burp|ZAP|Nessus|Hydra|Medusa|John|aircrack|metasploit",
+        "severity": "MEDIUM",
+        "description": "Suspicious user agent (scanning tool)"
+    },
+    "directory_bruteforce": {
+        "pattern": "/admin|/config|/backup|/wp-admin|/wp-login|/phpmyadmin|/cpanel|/webmail|/manager|/sqlmanager|/mysql|/db|/database",
+        "severity": "LOW",
+        "description": "Potential directory brute force"
+    }
+}

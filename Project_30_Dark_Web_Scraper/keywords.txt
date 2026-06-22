@@ -1,0 +1,12 @@
+password
+breach
+leak
+hack
+exploit
+vulnerability
+database
+secret
+confidential
+admin
+login
+credentials

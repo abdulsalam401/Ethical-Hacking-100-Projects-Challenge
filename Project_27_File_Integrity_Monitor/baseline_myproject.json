@@ -1,0 +1,40 @@
+{
+  "created": "2026-06-19T14:23:18.828364",
+  "target": "/mnt/d/Python Projects/audio",
+  "exclusions": [],
+  "total_files": 4,
+  "files": {
+    "audio_to_text.py": {
+      "hash": "660177803be41ad3e758def0a172df35534b0facad5d832a55b529fb9dd490a9",
+      "size": 9601,
+      "permissions": "777",
+      "mtime": 1770026549.877157,
+      "uid": 1000,
+      "gid": 1000
+    },
+    "New Text Document.txt": {
+      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "permissions": "777",
+      "mtime": 1781860991.2628336,
+      "uid": 1000,
+      "gid": 1000
+    },
+    "README.md": {
+      "hash": "6d4474ace85019ba5f76221fc0ba88fd1ab1a115524e6418968884dc30957472",
+      "size": 3307,
+      "permissions": "777",
+      "mtime": 1770026565.2598326,
+      "uid": 1000,
+      "gid": 1000
+    },
+    "requirements.txt": {
+      "hash": "367c611a337d8b63490f40c4e2ea37e56a6766234a15348f92bf748e4e5f32ae",
+      "size": 40,
+      "permissions": "777",
+      "mtime": 1770026549.8611622,
+      "uid": 1000,
+      "gid": 1000
+    }
+  }
+}

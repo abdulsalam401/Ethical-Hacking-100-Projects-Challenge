@@ -1,0 +1,161 @@
+{
+  "scan_info": {
+    "timestamp": "2026-06-16T23:21:36.791601",
+    "log_file": "sample_access.log",
+    "log_type": "apache",
+    "total_alerts": 16,
+    "rules_used": [
+      "sql_injection",
+      "path_traversal",
+      "command_injection",
+      "xss",
+      "brute_force",
+      "suspicious_user_agent",
+      "directory_bruteforce"
+    ]
+  },
+  "alerts": [
+    {
+      "type": "directory_bruteforce",
+      "severity": "LOW",
+      "description": "Potential directory brute force",
+      "ip": "127.0.0.1",
+      "timestamp": "2024-06-15T14:22:15+00:00",
+      "url": "/admin/login.php?user=admin&pass='",
+      "user_agent": "Mozilla/5.0"
+    },
+    {
+      "type": "path_traversal",
+      "severity": "HIGH",
+      "description": "Path traversal attempt detected",
+      "ip": "192.168.1.100",
+      "timestamp": "2024-06-15T14:22:20+00:00",
+      "url": "/../../../etc/passwd",
+      "user_agent": "curl/7.68.0"
+    },
+    {
+      "type": "path_traversal",
+      "severity": "HIGH",
+      "description": "Path traversal attempt detected",
+      "ip": "10.0.0.20",
+      "timestamp": "2024-06-15T14:22:21+00:00",
+      "url": "/../../../../windows/win.ini",
+      "user_agent": "Mozilla/5.0"
+    },
+    {
+      "type": "directory_bruteforce",
+      "severity": "LOW",
+      "description": "Potential directory brute force",
+      "ip": "192.168.1.200",
+      "timestamp": "2024-06-15T14:22:25+00:00",
+      "url": "/wp-admin",
+      "user_agent": "Mozilla/5.0"
+    },
+    {
+      "type": "directory_bruteforce",
+      "severity": "LOW",
+      "description": "Potential directory brute force",
+      "ip": "192.168.1.200",
+      "timestamp": "2024-06-15T14:22:26+00:00",
+      "url": "/wp-admin",
+      "user_agent": "Mozilla/5.0"
+    },
+    {
+      "type": "directory_bruteforce",
+      "severity": "LOW",
+      "description": "Potential directory brute force",
+      "ip": "192.168.1.200",
+      "timestamp": "2024-06-15T14:22:27+00:00",
+      "url": "/wp-admin",
+      "user_agent": "Mozilla/5.0"
+    },
+    {
+      "type": "directory_bruteforce",
+      "severity": "LOW",
+      "description": "Potential directory brute force",
+      "ip": "192.168.1.200",
+      "timestamp": "2024-06-15T14:22:28+00:00",
+      "url": "/wp-admin",
+      "user_agent": "Mozilla/5.0"
+    },
+    {
+      "type": "directory_bruteforce",
+      "severity": "LOW",
+      "description": "Potential directory brute force",
+      "ip": "192.168.1.200",
+      "timestamp": "2024-06-15T14:22:29+00:00",
+      "url": "/wp-admin",
+      "user_agent": "Mozilla/5.0"
+    },
+    {
+      "type": "brute_force",
+      "severity": "MEDIUM",
+      "description": "Brute force attempt: 6 failures in 10 seconds",
+      "ip": "192.168.1.200",
+      "timestamp": "2024-06-15T14:22:30+00:00",
+      "count": 6
+    },
+    {
+      "type": "directory_bruteforce",
+      "severity": "LOW",
+      "description": "Potential directory brute force",
+      "ip": "192.168.1.200",
+      "timestamp": "2024-06-15T14:22:30+00:00",
+      "url": "/wp-admin",
+      "user_agent": "Mozilla/5.0"
+    },
+    {
+      "type": "directory_bruteforce",
+      "severity": "LOW",
+      "description": "Potential directory brute force",
+      "ip": "192.168.1.200",
+      "timestamp": "2024-06-15T14:22:31+00:00",
+      "url": "/wp-admin",
+      "user_agent": "Mozilla/5.0"
+    },
+    {
+      "type": "brute_force",
+      "severity": "MEDIUM",
+      "description": "Brute force attempt: 6 failures in 10 seconds",
+      "ip": "10.0.0.30",
+      "timestamp": "2024-06-15T14:22:40+00:00",
+      "count": 6
+    },
+    {
+      "type": "xss",
+      "severity": "MEDIUM",
+      "description": "Cross-Site Scripting (XSS) attempt",
+      "ip": "10.0.0.5",
+      "timestamp": "2024-06-15T14:22:35+00:00",
+      "url": "/search?q=<script>alert(1)</script>",
+      "user_agent": "Mozilla/5.0"
+    },
+    {
+      "type": "xss",
+      "severity": "MEDIUM",
+      "description": "Cross-Site Scripting (XSS) attempt",
+      "ip": "10.0.0.5",
+      "timestamp": "2024-06-15T14:22:36+00:00",
+      "url": "/comment?text=<iframe",
+      "user_agent": "Mozilla/5.0"
+    },
+    {
+      "type": "command_injection",
+      "severity": "HIGH",
+      "description": "Command injection attempt",
+      "ip": "10.0.0.5",
+      "timestamp": "2024-06-15T14:22:40+00:00",
+      "url": "/;ls",
+      "user_agent": "python-requests/2.25.1"
+    },
+    {
+      "type": "command_injection",
+      "severity": "HIGH",
+      "description": "Command injection attempt",
+      "ip": "10.0.0.5",
+      "timestamp": "2024-06-15T14:22:41+00:00",
+      "url": "/|whoami",
+      "user_agent": "python-requests/2.25.1"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Blockchain Report</title>
+<style>
+body{font-family:'Segoe UI',sans-serif;background:#1a1a2e;color:#e0e0e0;padding:20px;}
+.container{max-width:1200px;margin:0 auto;}
+.header{background:linear-gradient(135deg,#16213e,#0f3460);padding:30px;border-radius:10px;}
+.header h1{color:#00d4ff;}
+.section{background:#2d2d44;padding:20px;border-radius:10px;margin:15px 0;}
+.section h2{color:#00d4ff;}
+table{width:100%;border-collapse:collapse;}
+th,td{padding:10px;text-align:left;border-bottom:1px solid #3d3d5a;}
+th{color:#00d4ff;}
+.risk{font-size:48px;font-weight:bold;text-align:center;padding:20px;}
+.risk-low{color:#00ff88;}
+.risk-medium{color:#ffa500;}
+.risk-high{color:#ff4444;}
+.risk-critical{color:#ff0040;}
+.vuln{background:#2d2d44;padding:10px;margin:5px 0;border-radius:5px;border-left:4px solid #ff0040;}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>🔍 Blockchain Explorer Report</h1>
+<p>Address: 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045</p>
+<p>Time: 2026-06-20 16:33:10</p>
+<p>API Requests: 53</p>
+</div>
+<div class="section">
+<h2>📝 Contract Analysis</h2>
+<div class="risk risk-low">0/100</div>
+<p style="text-align:center;">Risk Level: <strong>LOW</strong></p><p style="color:#00ff88;">✅ No vulnerabilities</p></div>
+<div class="section">
+<h3>🛡️ Defenses</h3>
+<table>
+<tr><th>Vulnerability</th><th>Defense</th></tr>
+<tr><td>Reentrancy</td><td>Checks-Effects-Interactions</td></tr>
+<tr><td>Unchecked Calls</td><td>Check return values</td></tr>
+<tr><td>Timestamp</td><td>Avoid block.timestamp</td></tr>
+</table>
+</div>
+</div>
+</body>
+</html>

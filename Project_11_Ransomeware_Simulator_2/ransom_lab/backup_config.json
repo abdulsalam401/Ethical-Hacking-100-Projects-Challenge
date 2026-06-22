@@ -1,0 +1,6 @@
+{
+  "server": "192.168.1.100",
+  "user": "backup_svc",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.fake",
+  "schedule": "daily@02:00"
+}

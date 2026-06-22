@@ -1,0 +1,482 @@
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║              PROJECT #5 - REVERSE SHELL ARCHITECTURE DIAGRAM                  ║
+║                      (Detailed Visual Overview)                               ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+
+1. HIGH-LEVEL OVERVIEW
+═══════════════════════════════════════════════════════════════════════════════════
+
+    ┌──────────────────────────────────────────────────────────────┐
+    │                    ATTACKER INFRASTRUCTURE                    │
+    ├──────────────────────────────────────────────────────────────┤
+    │                                                               │
+    │  ┌──────────────────────────────────────────────────────┐   │
+    │  │  LISTENER (listener.py)                              │   │
+    │  │  ─────────────────────────────────────────────────  │   │
+    │  │  • Listens on TCP port 4444                         │   │
+    │  │  • Waits for incoming reverse connections           │   │
+    │  │  • Accepts encrypted commands from user             │   │
+    │  │  • Displays decrypted command output                │   │
+    │  │  • Manages interactive shell session               │   │
+    │  └──────────────────────────────────────────────────────┘   │
+    │                         ▲                                    │
+    │                         │                                    │
+    │                    TCP Port 4444                            │
+    │              Encrypted Communication                        │
+    │         (All data encrypted with AES-256-CBC)              │
+    │                         │                                    │
+    │                         ▼                                    │
+    ├──────────────────────────────────────────────────────────────┤
+    │                    NETWORK (Internet/LAN)                     │
+    ├──────────────────────────────────────────────────────────────┤
+    │                         ▲                                    │
+    │                         │                                    │
+    │                    TCP Port 4444                            │
+    │              Encrypted Communication                        │
+    │         (All data encrypted with AES-256-CBC)              │
+    │                         │                                    │
+    │                         ▼                                    │
+    │  ┌──────────────────────────────────────────────────────┐   │
+    │  │  CLIENT (client.py) - THE PAYLOAD                   │   │
+    │  │  ─────────────────────────────────────────────────  │   │
+    │  │  • Deployed on victim machine                       │   │
+    │  │  • Auto-connects every 5 seconds                    │   │
+    │  │  • Receives & executes commands                     │   │
+    │  │  • Returns encrypted output                         │   │
+    │  │  • Maintains directory state (cwd)                  │   │
+    │  └──────────────────────────────────────────────────────┘   │
+    │                                                               │
+    └──────────────────────────────────────────────────────────────┘
+            ▼
+    ┌──────────────────────────────────────────────────────────────┐
+    │                    VICTIM MACHINE                             │
+    ├──────────────────────────────────────────────────────────────┤
+    │  • Network compromised or payload deployed                   │
+    │  • client.py running in background/persistence              │
+    │  • Commands executed with victim's privileges               │
+    │  • No user interaction visible                              │
+    └──────────────────────────────────────────────────────────────┘
+
+
+2. DETAILED COMPONENT BREAKDOWN
+═══════════════════════════════════════════════════════════════════════════════════
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                          CLIENT (client.py)                                  │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  INITIALIZATION LAYER                                                       │
+│  ┌───────────────────────────────────────────────────────────────────┐    │
+│  │ • Parse command line arguments (--ip, --port, --passphrase)     │    │
+│  │ • Derive AES-256 key from passphrase using PBKDF2             │    │
+│  │ • Set current working directory to os.getcwd()                │    │
+│  └───────────────────────────────────────────────────────────────────┘    │
+│                               ▼                                             │
+│  PERSISTENCE LAYER                                                          │
+│  ┌───────────────────────────────────────────────────────────────────┐    │
+│  │ INFINITE LOOP - Keep trying to connect:                         │    │
+│  │                                                                 │    │
+│  │  1. Create socket                                              │    │
+│  │  2. Set timeout to 10 seconds                                  │    │
+│  │  3. Try socket.connect((server_ip, server_port))              │    │
+│  │  4. On success: set timeout to None (blocking mode)           │    │
+│  │  5. On failure: sleep 5 seconds, retry                        │    │
+│  │  6. On exception: silently pass, sleep 5 seconds, retry       │    │
+│  │                                                                 │    │
+│  │  ◄─ This is why it's called a "reverse" shell:               │    │
+│  │      victim initiates the connection ◄─ unusual               │    │
+│  └───────────────────────────────────────────────────────────────────┘    │
+│                               ▼                                             │
+│  COMMAND EXECUTION LAYER                                                    │
+│  ┌───────────────────────────────────────────────────────────────────┐    │
+│  │ While connected:                                                │    │
+│  │                                                                 │    │
+│  │  1. Receive encrypted message from listener                   │    │
+│  │  2. Decrypt using AES-256 (shared key)                       │    │
+│  │  3. Parse command string                                      │    │
+│  │  4. If command is 'exit': close connection, exit program     │    │
+│  │  5. If command starts with 'cd': handle directory change    │    │
+│  │     • Update internal cwd variable (persist across commands) │    │
+│  │     • Return status message                                   │    │
+│  │  6. Else: Execute command with subprocess.run()              │    │
+│  │     • Use current working directory (cwd)                    │    │
+│  │     • Enable shell=True (supports pipes, redirects, etc)    │    │
+│  │     • Capture both stdout and stderr                         │    │
+│  │     • Timeout: 30 seconds (prevent hanging)                  │    │
+│  │     • On timeout: return "[!] Command timed out"            │    │
+│  │  7. Encrypt response (new cwd + output)                      │    │
+│  │  8. Send encrypted response back                             │    │
+│  │  9. Loop back to step 1                                       │    │
+│  │                                                                 │    │
+│  │  On connection error → go back to PERSISTENCE LAYER          │    │
+│  └───────────────────────────────────────────────────────────────────┘    │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                        LISTENER (listener.py)                                │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  INITIALIZATION LAYER                                                       │
+│  ┌───────────────────────────────────────────────────────────────────┐    │
+│  │ • Parse command line arguments (--host, --port, --passphrase)  │    │
+│  │ • Derive AES-256 key from passphrase using PBKDF2            │    │
+│  │ • Create server socket and bind to host:port                 │    │
+│  │ • Set SO_REUSEADDR to allow quick restart                   │    │
+│  │ • Listen for incoming connections (queue=1)                 │    │
+│  │ • Display banner with listening address                      │    │
+│  └───────────────────────────────────────────────────────────────────┘    │
+│                               ▼                                             │
+│  CONNECTION MANAGEMENT LAYER                                                │
+│  ┌───────────────────────────────────────────────────────────────────┐    │
+│  │ INFINITE LOOP - Accept connections:                            │    │
+│  │                                                                 │    │
+│  │  1. srv.accept() - Wait for incoming connection               │    │
+│  │     → Blocks until client connects                            │    │
+│  │  2. Extract client IP and port from addr tuple               │    │
+│  │  3. Print connection message with timestamp                   │    │
+│  │  4. Call _shell_loop(connection, addr, key)                  │    │
+│  │  5. On Ctrl+C: close server, exit program                    │    │
+│  │  6. On disconnection: loop back and wait for next connection │    │
+│  │                                                                 │    │
+│  │  Note: Only handles ONE client at a time                      │    │
+│  │        (queue=1 means multiple clients must wait)            │    │
+│  └───────────────────────────────────────────────────────────────────┘    │
+│                               ▼                                             │
+│  INTERACTIVE SHELL LOOP (_shell_loop function)                              │
+│  ┌───────────────────────────────────────────────────────────────────┐    │
+│  │ First, receive initial message from client:                    │    │
+│  │  1. recv_msg(conn) → Get encrypted initial directory         │    │
+│  │  2. aes_decrypt() → Decrypt to get client's current path     │    │
+│  │  3. Store as 'prompt_info' for display                        │    │
+│  │                                                                 │    │
+│  │ Then, INFINITE LOOP - Interact with client:                   │    │
+│  │                                                                 │    │
+│  │  1. Display prompt: "shell@IP_ADDRESS [prompt_info]> "       │    │
+│  │  2. input() → Read command from attacker (blocking)          │    │
+│  │  3. On Ctrl+C or EOF: return (disconnect this client)        │    │
+│  │  4. If command is empty: skip, go back to step 1              │    │
+│  │  5. Encrypt command using aes_encrypt(cmd.encode(), key)     │    │
+│  │  6. send_msg(conn, encrypted_data) → Send to client          │    │
+│  │  7. If command was 'exit': return (close connection)         │    │
+│  │  8. Receive encrypted response:                               │    │
+│  │     • recv_msg(conn) → Get encrypted response                │    │
+│  │     • aes_decrypt(raw, key) → Decrypt response               │    │
+│  │  9. Parse response:                                            │    │
+│  │     • First line: new prompt_info (updated directory)        │    │
+│  │     • Rest: command output                                    │    │
+│  │  10. Display output in formatted box:                          │    │
+│  │      ┌─ output ─────────────────────                          │    │
+│  │      │ [command output here]                                  │    │
+│  │      └───────────────────────────────                          │    │
+│  │  11. Loop back to step 1                                       │    │
+│  │                                                                 │    │
+│  │  On connection error → return to CONNECTION MANAGEMENT LAYER  │    │
+│  └───────────────────────────────────────────────────────────────────┘    │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+3. ENCRYPTION LAYER (BOTH SIDES USE IDENTICAL CODE)
+═══════════════════════════════════════════════════════════════════════════════
+
+    PLAINTEXT (e.g., "whoami")
+            │
+            ▼
+    ┌─────────────────────────────────────┐
+    │  STEP 1: PADDING (PKCS7)            │
+    │  ─────────────────────────────────  │
+    │  Add padding bytes to make data     │
+    │  multiple of 128 bits (16 bytes)    │
+    │                                      │
+    │  Example:                           │
+    │  Input:  "whoami" (6 bytes)        │
+    │  Output: "whoami" + 10 padding     │
+    │          bytes to make 16 total    │
+    └─────────────────────────────────────┘
+            │
+            ▼
+    ┌─────────────────────────────────────┐
+    │  STEP 2: KEY DERIVATION (PBKDF2)    │
+    │  ─────────────────────────────────  │
+    │  Function: PBKDF2-HMAC-SHA256      │
+    │  Input:    Passphrase              │
+    │  Salt:     b"project5salt99"       │
+    │  Iterations: 100,000 (SLOW!)       │
+    │  Output:   32-byte AES-256 key     │
+    │                                      │
+    │  Purpose: Make brute-force attacks  │
+    │  extremely expensive               │
+    │                                      │
+    │  Time to derive: ~100ms per attempt │
+    └─────────────────────────────────────┘
+            │
+            ▼
+    ┌─────────────────────────────────────┐
+    │  STEP 3: RANDOM IV GENERATION       │
+    │  ─────────────────────────────────  │
+    │  Create 16 random bytes             │
+    │  (different for every message)      │
+    │                                      │
+    │  Purpose: Prevent pattern detection │
+    │  - Same plaintext → different IV    │
+    │  - Same plaintext → different       │
+    │    ciphertext each time             │
+    └─────────────────────────────────────┘
+            │
+            ▼
+    ┌─────────────────────────────────────┐
+    │  STEP 4: AES-256-CBC ENCRYPTION     │
+    │  ─────────────────────────────────  │
+    │  Algorithm: Advanced Encryption     │
+    │            Standard                 │
+    │  Key size: 256 bits (32 bytes)     │
+    │  Block size: 128 bits (16 bytes)   │
+    │  Mode: Cipher Block Chaining       │
+    │                                      │
+    │  Process:                           │
+    │  • XOR plaintext block with IV     │
+    │  • Encrypt with AES                │
+    │  • Use result as IV for next block │
+    │  • Repeat for all blocks           │
+    │                                      │
+    │  Output: Ciphertext blocks         │
+    └─────────────────────────────────────┘
+            │
+            ▼
+    ┌─────────────────────────────────────┐
+    │  STEP 5: FRAMING FOR TRANSMISSION   │
+    │  ─────────────────────────────────  │
+    │  Prepend 4-byte length header       │
+    │  (big-endian uint32)                │
+    │                                      │
+    │  Format: [LLLL][IIII...][CCCC...]  │
+    │  • LLLL = Length of IV+Ciphertext  │
+    │  • IIII... = IV (16 bytes)         │
+    │  • CCCC... = Ciphertext (variable) │
+    │                                      │
+    │  This allows receiver to know       │
+    │  exactly how many bytes to read    │
+    └─────────────────────────────────────┘
+            │
+            ▼
+    ENCRYPTED MESSAGE (sent over TCP)
+    Ready for transmission on the network
+
+
+4. MESSAGE TRANSMISSION PROTOCOL
+═══════════════════════════════════════════════════════════════════════════════
+
+    ┌─────────────────────────────────────────────────────────┐
+    │  TCP SOCKET LAYER                                        │
+    ├─────────────────────────────────────────────────────────┤
+    │                                                          │
+    │  CLIENT sends data:                                      │
+    │  ┌──────────────────────────────────────────────────┐  │
+    │  │ socket.sendall([length][IV][ciphertext])        │  │
+    │  │                                                   │  │
+    │  │ Example payload:                                 │  │
+    │  │ [00 00 00 30] = Length (48 bytes)               │  │
+    │  │ [16 random bytes] = IV                          │  │
+    │  │ [32 bytes] = Encrypted command                  │  │
+    │  └──────────────────────────────────────────────────┘  │
+    │                                                          │
+    │  Over the network:                                       │
+    │  └──────────────────────────────────────────────────┐  │
+    │  TCP/IP stack handles:                             │  │
+    │  • Packet fragmentation & reassembly               │  │
+    │  • Acknowledgments & retransmission                │  │
+    │  • Flow control                                    │  │
+    │  • Data integrity (TCP checksum)                  │  │
+    │                                                    │  │
+    │  BUT: No encryption at this layer!                │  │
+    │  That's why we implement AES-256 ourselves ◄──── │  │
+    │  └──────────────────────────────────────────────────┘  │
+    │                                                          │
+    │  LISTENER receives data:                                 │
+    │  ┌──────────────────────────────────────────────────┐  │
+    │  │ raw_len = socket.recv(4)                        │  │
+    │  │ length = unpack(">I", raw_len)[0]              │  │
+    │  │ data = socket.recv(length)                      │  │
+    │  │                                                   │  │
+    │  │ ciphertext = data                               │  │
+    │  │ iv = ciphertext[:16]                            │  │
+    │  │ encrypted = ciphertext[16:]                     │  │
+    │  │ plaintext = aes_decrypt(encrypted, iv, key)    │  │
+    │  └──────────────────────────────────────────────────┘  │
+    │                                                          │
+    └─────────────────────────────────────────────────────────┘
+
+
+5. COMMAND EXECUTION FLOW (EXAMPLE: whoami)
+═══════════════════════════════════════════════════════════════════════════════
+
+    ATTACKER (listener.py)
+    ┌────────────────────────────────────────────────────────┐
+    │ shell@192.168.1.5 [/home/user]> whoami               │
+    │ ▲                                                       │
+    │ └─ User types command and presses Enter               │
+    └────────────────────────────────────────────────────────┘
+            │ cmd = "whoami"
+            ▼
+    ┌────────────────────────────────────────────────────────┐
+    │ encrypt(cmd.encode(), key)                             │
+    │ ├─ Add PKCS7 padding                                  │
+    │ ├─ Derive key from passphrase                         │
+    │ ├─ Generate random IV                                 │
+    │ ├─ AES-256-CBC encrypt with IV+key                    │
+    │ └─ Frame with length header                           │
+    │ Result: [4-byte len][16-byte IV][encrypted data]     │
+    └────────────────────────────────────────────────────────┘
+            │ send_msg(sock, encrypted_data)
+            ▼
+    ═════════════════════════════════════════════════════════
+           NETWORK - Encrypted TCP transmission
+    ═════════════════════════════════════════════════════════
+            │ encrypted_data received
+            ▼
+    VICTIM (client.py)
+    ┌────────────────────────────────────────────────────────┐
+    │ recv_msg(sock)                                         │
+    │ ├─ Read 4-byte length                                 │
+    │ ├─ Read exactly 'length' bytes of data               │
+    │ └─ Return encrypted_data                              │
+    └────────────────────────────────────────────────────────┘
+            │ encrypted_data
+            ▼
+    ┌────────────────────────────────────────────────────────┐
+    │ decrypt(encrypted_data, key)                           │
+    │ ├─ Extract IV (first 16 bytes)                        │
+    │ ├─ Extract ciphertext (remaining bytes)               │
+    │ ├─ Derive key from passphrase (MUST match attacker)  │
+    │ ├─ AES-256-CBC decrypt using IV+key                   │
+    │ ├─ Remove PKCS7 padding                               │
+    │ └─ Result: "whoami"                                   │
+    └────────────────────────────────────────────────────────┘
+            │ cmd = "whoami"
+            ▼
+    ┌────────────────────────────────────────────────────────┐
+    │ if cmd != "exit":                                      │
+    │   subprocess.run(                                       │
+    │     cmd="whoami",                                       │
+    │     shell=True,                                         │
+    │     cwd="/home/user",  ◄─ Directory persistence!     │
+    │     capture_output=True,                               │
+    │     timeout=30,                                         │
+    │     text=True                                           │
+    │   )                                                      │
+    │   stdout: "admin"                                       │
+    │   stderr: ""                                            │
+    └────────────────────────────────────────────────────────┘
+            │ output = "admin"
+            ▼
+    ┌────────────────────────────────────────────────────────┐
+    │ response = cwd + "\n" + output                         │
+    │ response = "/home/user\nadmin"                         │
+    └────────────────────────────────────────────────────────┘
+            │ response.encode()
+            ▼
+    ┌────────────────────────────────────────────────────────┐
+    │ encrypt(response.encode(), key)                        │
+    │ └─ Same process as before:                            │
+    │   Padding → Key derivation → Random IV →              │
+    │   AES-256-CBC → Framing                               │
+    └────────────────────────────────────────────────────────┘
+            │ encrypted_response
+            ▼
+    ┌────────────────────────────────────────────────────────┐
+    │ send_msg(sock, encrypted_response)                     │
+    └────────────────────────────────────────────────────────┘
+            │ encrypted_response
+            ▼
+    ═════════════════════════════════════════════════════════
+           NETWORK - Encrypted TCP transmission
+    ═════════════════════════════════════════════════════════
+            │ encrypted_response received
+            ▼
+    ATTACKER (listener.py)
+    ┌────────────────────────────────────────────────────────┐
+    │ recv_msg(conn)                                         │
+    │ └─ Read framed encrypted response                      │
+    └────────────────────────────────────────────────────────┘
+            │ encrypted_response
+            ▼
+    ┌────────────────────────────────────────────────────────┐
+    │ decrypt(encrypted_response, key)                       │
+    │ └─ Decrypt using same AES-256 key                     │
+    │    Result: "/home/user\nadmin"                        │
+    └────────────────────────────────────────────────────────┘
+            │ response = "/home/user\nadmin"
+            ▼
+    ┌────────────────────────────────────────────────────────┐
+    │ Parse response:                                         │
+    │ lines = response.split("\n", 1)                        │
+    │ prompt_info = "/home/user"  ◄─ Update prompt!        │
+    │ output = "admin"                                       │
+    └────────────────────────────────────────────────────────┘
+            │ Display output
+            ▼
+    ┌────────────────────────────────────────────────────────┐
+    │  ┌─ output ───────────────────────────────────────────┐
+    │  │ admin                                              │
+    │  └────────────────────────────────────────────────────┐
+    │                                                        │
+    │  shell@192.168.1.5 [/home/user]>  ◄─ Ready for next  │
+    └────────────────────────────────────────────────────────┘
+
+
+6. SECURITY ANALYSIS
+═══════════════════════════════════════════════════════════════════════════════
+
+    STRENGTHS:
+    ✓ AES-256: Computationally infeasible to break
+    ✓ Random IV: Prevents pattern analysis
+    ✓ PBKDF2: Slow key derivation prevents brute-force
+    ✓ Encryption: Traffic eavesdropping prevented
+    
+    WEAKNESSES:
+    ✗ Raw TCP: No TLS/SSL, visible as encrypted traffic
+    ✗ No auth: No verification of client legitimacy
+    ✗ Shared secret: Key is just derived from passphrase
+    ✗ No integrity: Can't detect if messages were modified
+    ✗ Predictable behavior: Reconnects every 5 seconds (detectable)
+    ✗ Fixed salt: All connections use same PBKDF2 salt
+    
+    DETECTION METHODS:
+    ● Network: IDS rules for repeated connections from internal IP
+    ● Host: Process monitoring for suspicious subprocess creation
+    ● Traffic: Behavioral analysis of connection timing
+    ● Inspection: Egress filtering / firewall rules
+    ● Analysis: DLP tools can detect data exfiltration patterns
+
+
+7. KEY CONCEPTS SUMMARY
+═══════════════════════════════════════════════════════════════════════════════
+
+    REVERSE SHELL:
+    └─ Target initiates connection to attacker (opposite of normal)
+    └─ Persistence: Can reconnect even if connection drops
+    └─ Interactive: Full shell access with command execution
+
+    ENCRYPTION (AES-256-CBC):
+    └─ Algorithm: Confidentiality through mathematical transformation
+    └─ Key derivation: PBKDF2 stretches weak password into strong key
+    └─ Initialization vector: Random nonce prevents pattern detection
+    └─ Padding: Makes plaintext block-aligned for CBC mode
+
+    NETWORK PROTOCOL:
+    └─ Length-prefixed framing: Sender tells receiver how much data to read
+    └─ TCP guarantee: All bytes arrive in order (or connection errors)
+    └─ Blocking sockets: Sender waits for ACK before continuing
+
+    COMMAND EXECUTION:
+    └─ Shell context: Pipes, redirects, and builtins work
+    └─ Directory state: Changes persist across multiple commands
+    └─ Timeout: Prevents hanging on stuck processes
+    └─ Error handling: Stderr captured along with stdout
+
+═══════════════════════════════════════════════════════════════════════════════

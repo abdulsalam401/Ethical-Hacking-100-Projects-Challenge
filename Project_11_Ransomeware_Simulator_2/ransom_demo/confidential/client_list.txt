@@ -1,0 +1,3 @@
+Client A: $50,000
+Client B: $75,000
+Client C: $100,000

@@ -1,0 +1,7 @@
+CONFIDENTIAL REPORT
+Employee: John Smith
+Salary: $95,000
+SSN: 123-45-6789
+Notes: Annual performance review pending.
+
+

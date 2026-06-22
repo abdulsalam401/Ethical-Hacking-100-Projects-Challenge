@@ -1,0 +1,26 @@
+{
+  "scan_info": {
+    "target": "172.18.0.1/16",
+    "scan_time": "2026-06-08T16:44:26.511949",
+    "fast_mode": true,
+    "scanner": "WSL Network Scanner v2"
+  },
+  "hosts": [
+    {
+      "ip": "172.18.0.1",
+      "mac": "Unknown (WSL)",
+      "os_guess": "Linux/macOS",
+      "os_confidence": "High",
+      "os_details": "TTL=64",
+      "open_ports": [
+        {
+          "port": 22,
+          "service": "SSH",
+          "status": "open",
+          "method": "TCP Connect"
+        }
+      ],
+      "scan_time": "2026-06-08T16:44:26.510808"
+    }
+  ]
+}

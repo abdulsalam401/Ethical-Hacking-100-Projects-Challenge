@@ -1,0 +1,1886 @@
+{
+  "scan_info": {
+    "timestamp": "2026-06-13T23:38:12.255070",
+    "hostname": "DESKTOP-9AF1P50",
+    "system": "Windows 11",
+    "total_processes": 322,
+    "total_connections": 149,
+    "suspicious_count": 41,
+    "admin_mode": false
+  },
+  "processes": [
+    {
+      "pid": 19424,
+      "ppid": 412,
+      "name": "Code.exe",
+      "cmdline": "C:\\Users\\abdul\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --dns-result-order=ipv4first --experimental-network-inspection --inspect-port=0 --video-capture-use-gpu-memory-buffer --user-data-dir=C:\\Users\\abdul\\AppData\\Roaming\\Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --cors-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --fetch-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --field-trial-handle=1824,i,273989872145896856,11092938500150695396,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,NetworkServiceSandbox,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=1820,i,8784608032336788241,15353439274065697595,4 --trace-process-track-uuid=3190708992871164437 --mojo-platform-channel-handle=4308 /prefetch:14",
+      "create_time": "2026-06-13 22:22:03",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 591.0,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 14592,
+      "ppid": 13176,
+      "name": "Grammarly.Desktop.exe",
+      "cmdline": "C:\\Users\\abdul\\AppData\\Local\\Grammarly\\DesktopIntegrations\\Grammarly.Desktop.exe new-version-v2 after-autoupdate updatedFrom=1.2.267.1898",
+      "create_time": "2026-06-13 23:32:44",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 286.31640625,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 11872,
+      "ppid": 4420,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --flag-switches-begin --flag-switches-end --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors",
+      "create_time": "2026-06-07 12:11:56",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 282.43359375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 15804,
+      "ppid": 412,
+      "name": "Code.exe",
+      "cmdline": "C:\\Users\\abdul\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe --type=renderer --user-data-dir=C:\\Users\\abdul\\AppData\\Roaming\\Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --cors-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --fetch-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --app-user-model-id=Microsoft.VisualStudioCode --app-path=C:\\Users\\abdul\\AppData\\Local\\Programs\\Microsoft VS Code\\6928394f91\\resources\\app --enable-sandbox --enable-blink-features=HighlightAPI --max-active-webgl-contexts=32 --disable-blink-features=FontMatchingCTMigration,StandardizedBrowserZoom, --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=4 --time-ticks-at-unix-epoch=-1780814961607385 --launch-time-ticks=556355572855 --field-trial-handle=1824,i,273989872145896856,11092938500150695396,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,NetworkServiceSandbox,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=1820,i,8784608032336788241,15353439274065697595,4 --trace-process-track-uuid=3190708990060038890 --mojo-platform-channel-handle=3196 --vscode-window-config=vscode:a0f22e57-683b-43ad-93da-8691619f0076 /prefetch:1",
+      "create_time": "2026-06-13 22:21:57",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 265.0546875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 4200,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=13495 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=555383929416 --metrics-shmem-handle=4984,i,12824499717053646102,17993206051782409881,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190721631691623749 --mojo-platform-channel-handle=11456 /prefetch:1",
+      "create_time": "2026-06-13 22:05:45",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 242.73828125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 16224,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=13844 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=557931575558 --metrics-shmem-handle=18220,i,5043545204900456130,2173240975166591185,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190721958719229050 --mojo-platform-channel-handle=17332 /prefetch:1",
+      "create_time": "2026-06-13 22:48:13",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 215.4921875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 10052,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=13794 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=557589967597 --metrics-shmem-handle=4616,i,14907478137495702260,16470896465984568361,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190721911867136600 --mojo-platform-channel-handle=19036 /prefetch:1",
+      "create_time": "2026-06-13 22:42:31",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 198.4609375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 8976,
+      "ppid": 19424,
+      "name": "Code.exe",
+      "cmdline": "C:\\Users\\abdul\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe c:\\Users\\abdul\\.vscode\\extensions\\streetsidesoftware.code-spell-checker-4.5.6\\packages\\_server\\dist\\main.cjs --node-ipc --clientProcessId=19424",
+      "create_time": "2026-06-13 22:22:42",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 167.79296875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 10504,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --extension-process --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=23 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=1300550452 --metrics-shmem-handle=8604,i,2666507040837596634,14440849145024947284,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190709007863834021 --mojo-platform-channel-handle=4204 /prefetch:9",
+      "create_time": "2026-06-07 12:11:58",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 146.80859375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 10584,
+      "ppid": 10484,
+      "name": "explorer.exe",
+      "cmdline": "C:\\WINDOWS\\Explorer.EXE",
+      "create_time": "2026-06-07 11:52:46",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 140.74609375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 20932,
+      "ppid": 19424,
+      "name": "Code.exe",
+      "cmdline": "C:\\Users\\abdul\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe c:\\Users\\abdul\\.vscode\\extensions\\ms-python.vscode-pylance-2026.2.1\\dist\\server.bundle.js --cancellationReceive=file:4eaff1dd123ff7693202cb19ceefa1640606f18cd2 --node-ipc --clientProcessId=19424",
+      "create_time": "2026-06-13 22:22:48",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 125.6484375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 15684,
+      "ppid": 692,
+      "name": "MsMpEng.exe",
+      "cmdline": "",
+      "create_time": "2026-06-10 15:57:38",
+      "username": "N/A",
+      "memory_mb": 121.93359375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 25148,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=13435 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=554873869793 --metrics-shmem-handle=5544,i,5599846045287771571,13233594019517636939,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190721575469112809 --mojo-platform-channel-handle=6896 /prefetch:1",
+      "create_time": "2026-06-13 21:57:15",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 120.9140625,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 15936,
+      "ppid": 412,
+      "name": "Code.exe",
+      "cmdline": "C:\\Users\\abdul\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe --type=gpu-process --user-data-dir=C:\\Users\\abdul\\AppData\\Roaming\\Code --gpu-preferences=SAAAAAAAAADgAAAEAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --field-trial-handle=1824,i,273989872145896856,11092938500150695396,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,NetworkServiceSandbox,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=1820,i,8784608032336788241,15353439274065697595,4 --trace-process-track-uuid=3190708988185955192 --mojo-platform-channel-handle=1804 /prefetch:2",
+      "create_time": "2026-06-13 22:21:56",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 109.15234375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 12384,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=gpu-process --no-pre-read-main-dll --gpu-preferences=SAAAAAAAAADgAAAEAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --metrics-shmem-handle=1716,i,339651033087681150,18118180377254227132,262144 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190708988185955192 --mojo-platform-channel-handle=1864 /prefetch:2",
+      "create_time": "2026-06-07 12:11:57",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 101.91015625,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 15168,
+      "ppid": 8068,
+      "name": "vmmemWSL",
+      "cmdline": "",
+      "create_time": "2026-06-13 22:31:01",
+      "username": "N/A",
+      "memory_mb": 95.5078125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 11972,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=14202 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=560844243129 --metrics-shmem-handle=8616,i,1282584573468454719,7256896792654777507,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190722294180210992 --mojo-platform-channel-handle=7648 /prefetch:1",
+      "create_time": "2026-06-13 23:36:45",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 83.6875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 25732,
+      "ppid": 20284,
+      "name": "msedgewebview2.exe",
+      "cmdline": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\149.0.4022.62\\msedgewebview2.exe --embedded-browser-webview=1 --webview-exe-name=Superhuman.WebUI.exe --webview-exe-version=2.15.7 --user-data-dir=C:\\Users\\abdul\\AppData\\Local\\com.superhuman.web-client\\EBWebView --noerrdialogs --embedded-browser-webview-dpi-awareness=2 --autoplay-policy=no-user-gesture-required --disable-features=msEnhancedTrackingPreventionEnabled,msWebOOUI,msPdfOOUI,msSmartScreenProtection --lang=en-US --mojo-named-platform-channel-pipe=20284.29056.7521967066053180711 /pfhostedapp:0747045c8e6343a03cfcda3b5e1f4e3b7b6b7ae0",
+      "create_time": "2026-06-13 23:32:56",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 82.4453125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 29800,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=14210 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=560873214608 --metrics-shmem-handle=16136,i,9043835126676345204,10548148762131660225,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190722301676545784 --mojo-platform-channel-handle=18104 /prefetch:1",
+      "create_time": "2026-06-13 23:37:14",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 77.74609375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 1352,
+      "ppid": 14592,
+      "name": "msedgewebview2.exe",
+      "cmdline": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\149.0.4022.62\\msedgewebview2.exe --embedded-browser-webview=1 --webview-exe-name=Grammarly.Desktop.exe --webview-exe-version=1.2.268.1900 --user-data-dir=C:\\Users\\abdul\\AppData\\Roaming\\Grammarly\\DesktopIntegrations\\WebViewUserDataFolder\\EBWebView --noerrdialogs --embedded-browser-webview-dpi-awareness=2 --disable-features=msForceBrowserSignIn --mojo-named-platform-channel-pipe=14592.15504.8153192161307297157 /pfhostedapp:a9a473c64ba10a553994a2c1e3981b2dd22980e3",
+      "create_time": "2026-06-13 23:32:59",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 73.82421875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 412,
+      "ppid": 10584,
+      "name": "Code.exe",
+      "cmdline": "C:\\Users\\abdul\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+      "create_time": "2026-06-13 22:21:54",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 68.6171875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 19984,
+      "ppid": 25732,
+      "name": "msedgewebview2.exe",
+      "cmdline": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\149.0.4022.62\\msedgewebview2.exe --type=renderer --noerrdialogs --user-data-dir=C:\\Users\\abdul\\AppData\\Local\\com.superhuman.web-client\\EBWebView --webview-exe-name=Superhuman.WebUI.exe --webview-exe-version=2.15.7 --embedded-browser-webview=1 --embedded-browser-webview-dpi-awareness=2 --autoplay-policy=no-user-gesture-required --video-capture-use-gpu-memory-buffer --lang=en-US --js-flags=--expose-gc --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=5 --time-ticks-at-unix-epoch=-1780814961607388 --launch-time-ticks=560616263314 --ssd-no-pressure-read-main-dll --metrics-shmem-handle=3984,i,10131835853224512038,2199258481122784845,2097152 --field-trial-handle=1948,i,18292836646736941820,13863891658705564092,262144 --disable-features=msEnhancedTrackingPreventionEnabled,msPdfOOUI,msSmartScreenProtection,msWebOOUI --variations-seed-version --pseudonymization-salt-handle=1960,i,4699976923913144792,16369833698408871408,4 --trace-process-track-uuid=3190708990997080739 --mojo-platform-channel-handle=3992 /pfhostedapp:0747045c8e6343a03cfcda3b5e1f4e3b7b6b7ae0 /prefetch:1",
+      "create_time": "2026-06-13 23:32:57",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 64.8828125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 3296,
+      "ppid": 4,
+      "name": "MemCompression",
+      "cmdline": "",
+      "create_time": "2026-06-07 11:50:47",
+      "username": "N/A",
+      "memory_mb": 58.1015625,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 25116,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --extension-process --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=14208 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=560873127213 --metrics-shmem-handle=9908,i,12786717167266957949,13170738550170965911,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190722299802462086 --mojo-platform-channel-handle=5052 /prefetch:9",
+      "create_time": "2026-06-13 23:37:14",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 58.01953125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 10436,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=13835 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=557872444281 --metrics-shmem-handle=8480,i,16371742215995739087,4471740981640289297,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190721950285852409 --mojo-platform-channel-handle=17236 /prefetch:1",
+      "create_time": "2026-06-13 22:47:14",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 55.30859375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 1204,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --extension-process --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=14205 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=560856180132 --metrics-shmem-handle=5400,i,569792441921843471,16424482651381514707,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190722296991336539 --mojo-platform-channel-handle=9148 /prefetch:9",
+      "create_time": "2026-06-13 23:36:57",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 52.4609375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 11928,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --extension-process --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=14190 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=560732009671 --metrics-shmem-handle=2924,i,4569068794274724019,6476170459018247519,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190722282935708804 --mojo-platform-channel-handle=17576 /prefetch:9",
+      "create_time": "2026-06-13 23:34:53",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 52.328125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 1536,
+      "ppid": 864,
+      "name": "dwm.exe",
+      "cmdline": "",
+      "create_time": "2026-06-07 11:50:45",
+      "username": "N/A",
+      "memory_mb": 48.40234375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 13792,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --no-pre-read-main-dll --metrics-shmem-handle=1868,i,10256141416065980691,15910588257528951836,524288 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190708989122997041 --mojo-platform-channel-handle=3220 /prefetch:11",
+      "create_time": "2026-06-07 12:11:57",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 44.0703125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 14580,
+      "ppid": 1228,
+      "name": "TextInputHost.exe",
+      "cmdline": "C:\\WINDOWS\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe -ServerName:InputApp.AppXk0k6mrh4r2q0ct33a9wgbez0x7v9cz5y.mca",
+      "create_time": "2026-06-07 11:53:14",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 42.16796875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 5272,
+      "ppid": 10584,
+      "name": "msedge.exe",
+      "cmdline": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe --single-argument C:\\Users\\abdul\\Downloads\\AI report 13-june-2026.pdf",
+      "create_time": "2026-06-13 22:03:46",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 40.515625,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 23644,
+      "ppid": 412,
+      "name": "Code.exe",
+      "cmdline": "C:\\Users\\abdul\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --video-capture-use-gpu-memory-buffer --user-data-dir=C:\\Users\\abdul\\AppData\\Roaming\\Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --cors-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --fetch-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --field-trial-handle=1824,i,273989872145896856,11092938500150695396,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,NetworkServiceSandbox,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=1820,i,8784608032336788241,15353439274065697595,4 --trace-process-track-uuid=3190708991934122588 --mojo-platform-channel-handle=4180 /prefetch:14",
+      "create_time": "2026-06-13 22:22:03",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 39.80859375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 26860,
+      "ppid": 25732,
+      "name": "msedgewebview2.exe",
+      "cmdline": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\149.0.4022.62\\msedgewebview2.exe --type=gpu-process --noerrdialogs --user-data-dir=C:\\Users\\abdul\\AppData\\Local\\com.superhuman.web-client\\EBWebView --webview-exe-name=Superhuman.WebUI.exe --webview-exe-version=2.15.7 --embedded-browser-webview=1 --embedded-browser-webview-dpi-awareness=2 --gpu-preferences=SAAAAAAAAADgAAAEAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --startup-read-main-dll --metrics-shmem-handle=1876,i,13002631502937364851,16659755300990998965,262144 --field-trial-handle=1948,i,18292836646736941820,13863891658705564092,262144 --disable-features=msEnhancedTrackingPreventionEnabled,msPdfOOUI,msSmartScreenProtection,msWebOOUI --variations-seed-version --pseudonymization-salt-handle=1960,i,4699976923913144792,16369833698408871408,4 --trace-process-track-uuid=3190708988185955192 --mojo-platform-channel-handle=1940 /prefetch:2 /pfhostedapp:0747045c8e6343a03cfcda3b5e1f4e3b7b6b7ae0",
+      "create_time": "2026-06-13 23:32:57",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 38.87109375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 19916,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --extension-process --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=14214 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=560906580428 --metrics-shmem-handle=5316,i,13217094334787177841,5242267715184986843,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190722305424713180 --mojo-platform-channel-handle=12748 /prefetch:9",
+      "create_time": "2026-06-13 23:37:48",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 38.4453125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 1844,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=13415 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=554822924619 --metrics-shmem-handle=13880,i,11405120553513563087,52833268216869069,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190721556728275829 --mojo-platform-channel-handle=2376 /prefetch:1",
+      "create_time": "2026-06-13 21:56:24",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 37.35546875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 8876,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --extension-process --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=17 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=1299876027 --metrics-shmem-handle=6044,i,12482089945885036374,10861252008263333348,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190709002241582927 --mojo-platform-channel-handle=5996 /prefetch:9",
+      "create_time": "2026-06-07 12:11:57",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 36.45703125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 22384,
+      "ppid": 1352,
+      "name": "msedgewebview2.exe",
+      "cmdline": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\149.0.4022.62\\msedgewebview2.exe --type=gpu-process --noerrdialogs --user-data-dir=C:\\Users\\abdul\\AppData\\Roaming\\Grammarly\\DesktopIntegrations\\WebViewUserDataFolder\\EBWebView --webview-exe-name=Grammarly.Desktop.exe --webview-exe-version=1.2.268.1900 --embedded-browser-webview=1 --embedded-browser-webview-dpi-awareness=2 --gpu-preferences=SAAAAAAAAADgAAAEAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --startup-read-main-dll --metrics-shmem-handle=1872,i,9112675009431842148,769382929472874912,262144 --field-trial-handle=1936,i,12097071590019983685,12434695246574472203,262144 --variations-seed-version --pseudonymization-salt-handle=1968,i,14823992382433656507,3526552973409829809,4 --trace-process-track-uuid=3190708988185955192 --mojo-platform-channel-handle=1924 /prefetch:2 /pfhostedapp:a9a473c64ba10a553994a2c1e3981b2dd22980e3",
+      "create_time": "2026-06-13 23:32:59",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 33.04296875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 21876,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=13761 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=557400760557 --metrics-shmem-handle=13876,i,5169916295357265384,6549292929645564545,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190721880944755583 --mojo-platform-channel-handle=16620 /prefetch:1",
+      "create_time": "2026-06-13 22:39:22",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 32.953125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 3996,
+      "ppid": 412,
+      "name": "Code.exe",
+      "cmdline": "C:\\Users\\abdul\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe --type=renderer --user-data-dir=C:\\Users\\abdul\\AppData\\Roaming\\Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --cors-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --fetch-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --app-user-model-id=Microsoft.VisualStudioCode --app-path=C:\\Users\\abdul\\AppData\\Local\\Programs\\Microsoft VS Code\\6928394f91\\resources\\app --enable-sandbox --enable-blink-features=HighlightAPI --max-active-webgl-contexts=32 --disable-blink-features=FontMatchingCTMigration,StandardizedBrowserZoom, --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=10 --time-ticks-at-unix-epoch=-1780814961607385 --launch-time-ticks=556397204292 --field-trial-handle=1824,i,273989872145896856,11092938500150695396,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,NetworkServiceSandbox,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=1820,i,8784608032336788241,15353439274065697595,4 --trace-process-track-uuid=3190708995682289984 --mojo-platform-channel-handle=4864 --vscode-window-config=vscode:a0f22e57-683b-43ad-93da-8691619f0076 /prefetch:1",
+      "create_time": "2026-06-13 22:22:38",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 32.7265625,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 29532,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=13840 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=557909674573 --metrics-shmem-handle=10132,i,8206662516754782433,1430325278103892849,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190721954971061654 --mojo-platform-channel-handle=16692 /prefetch:1",
+      "create_time": "2026-06-13 22:47:51",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 32.296875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 140,
+      "ppid": 4,
+      "name": "Unknown",
+      "cmdline": "",
+      "create_time": "2026-06-07 11:50:18",
+      "username": "N/A",
+      "memory_mb": 31.63671875,
+      "cpu_percent": 0,
+      "status": "stopped"
+    },
+    {
+      "pid": 18492,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=14211 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=560875254741 --metrics-shmem-handle=13708,i,10255502823966235176,10766736660856474165,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190722302613587633 --mojo-platform-channel-handle=15612 /prefetch:1",
+      "create_time": "2026-06-13 23:37:16",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 30.06640625,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 1648,
+      "ppid": 25732,
+      "name": "msedgewebview2.exe",
+      "cmdline": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\149.0.4022.62\\msedgewebview2.exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --noerrdialogs --user-data-dir=C:\\Users\\abdul\\AppData\\Local\\com.superhuman.web-client\\EBWebView --webview-exe-name=Superhuman.WebUI.exe --webview-exe-version=2.15.7 --embedded-browser-webview=1 --embedded-browser-webview-dpi-awareness=2 --startup-read-main-dll --metrics-shmem-handle=2112,i,8228215932296621409,12720277388654548721,524288 --field-trial-handle=1948,i,18292836646736941820,13863891658705564092,262144 --disable-features=msEnhancedTrackingPreventionEnabled,msPdfOOUI,msSmartScreenProtection,msWebOOUI --variations-seed-version --pseudonymization-salt-handle=1960,i,4699976923913144792,16369833698408871408,4 --trace-process-track-uuid=3190708989122997041 --mojo-platform-channel-handle=2028 /prefetch:11 /pfhostedapp:0747045c8e6343a03cfcda3b5e1f4e3b7b6b7ae0",
+      "create_time": "2026-06-13 23:32:57",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 28.953125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 17744,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=14103 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=560031118874 --metrics-shmem-handle=14684,i,17684807053714177129,10622823865296793592,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190722201413067941 --mojo-platform-channel-handle=19028 /prefetch:1",
+      "create_time": "2026-06-13 23:23:12",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 28.21875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 13628,
+      "ppid": 3844,
+      "name": "ctfmon.exe",
+      "cmdline": "/QuitInfo:0000000000000340;0000000000000344;",
+      "create_time": "2026-06-07 11:53:13",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 28.18359375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 15996,
+      "ppid": 1352,
+      "name": "msedgewebview2.exe",
+      "cmdline": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\149.0.4022.62\\msedgewebview2.exe --type=renderer --noerrdialogs --user-data-dir=C:\\Users\\abdul\\AppData\\Roaming\\Grammarly\\DesktopIntegrations\\WebViewUserDataFolder\\EBWebView --webview-exe-name=Grammarly.Desktop.exe --webview-exe-version=1.2.268.1900 --embedded-browser-webview=1 --embedded-browser-webview-dpi-awareness=2 --video-capture-use-gpu-memory-buffer --lang=en-US --js-flags=--expose-gc --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=5 --time-ticks-at-unix-epoch=-1780814961607386 --launch-time-ticks=560618443520 --ssd-no-pressure-read-main-dll --metrics-shmem-handle=3936,i,8214761155177425848,11300907759736642164,2097152 --field-trial-handle=1936,i,12097071590019983685,12434695246574472203,262144 --variations-seed-version --pseudonymization-salt-handle=1968,i,14823992382433656507,3526552973409829809,4 --trace-process-track-uuid=3190708990997080739 --mojo-platform-channel-handle=3992 /pfhostedapp:a9a473c64ba10a553994a2c1e3981b2dd22980e3 /prefetch:1",
+      "create_time": "2026-06-13 23:33:00",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 26.953125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 22352,
+      "ppid": 7344,
+      "name": "python.exe",
+      "cmdline": "C:\\Python313\\python.exe memory_analyzer.py --verbose --output report.json",
+      "create_time": "2026-06-13 23:38:03",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 26.92578125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 27508,
+      "ppid": 1228,
+      "name": "SDXHelper.exe",
+      "cmdline": "C:\\Program Files\\Microsoft Office\\Root\\Office16\\SDXHelper.exe -Embedding",
+      "create_time": "2026-06-13 23:21:33",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 26.37109375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 30136,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --extension-process --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=13561 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=555862867561 --metrics-shmem-handle=11872,i,7338970532163100022,3169209014711424172,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190721693536385783 --mojo-platform-channel-handle=8304 /prefetch:9",
+      "create_time": "2026-06-13 22:13:44",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 26.01953125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 6280,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --extension-process --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=12096 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=442052412242 --metrics-shmem-handle=5844,i,14482560613971610952,4246822231351114854,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190720320770076998 --mojo-platform-channel-handle=10784 /prefetch:9",
+      "create_time": "2026-06-12 14:37:00",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 25.13671875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 26632,
+      "ppid": 1228,
+      "name": "StartMenuExperienceHost.exe",
+      "cmdline": "C:\\WINDOWS\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe -ServerName:FullTrustApp.AppXykjsye98af63ez2annt9djke8trg8stn.mca",
+      "create_time": "2026-06-09 14:01:06",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 24.44921875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 28304,
+      "ppid": 412,
+      "name": "Code.exe",
+      "cmdline": "C:\\Users\\abdul\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --video-capture-use-gpu-memory-buffer --user-data-dir=C:\\Users\\abdul\\AppData\\Roaming\\Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --cors-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --fetch-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --field-trial-handle=1824,i,273989872145896856,11092938500150695396,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,NetworkServiceSandbox,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=1820,i,8784608032336788241,15353439274065697595,4 --trace-process-track-uuid=3190708990997080739 --mojo-platform-channel-handle=4140 /prefetch:14",
+      "create_time": "2026-06-13 22:22:03",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 24.2734375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 6792,
+      "ppid": 10584,
+      "name": "FxSound.exe",
+      "cmdline": "C:\\Program Files\\FxSound LLC\\FxSound\\FxSound.exe",
+      "create_time": "2026-06-07 11:53:22",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 23.5078125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 20880,
+      "ppid": 1352,
+      "name": "msedgewebview2.exe",
+      "cmdline": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\149.0.4022.62\\msedgewebview2.exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --noerrdialogs --user-data-dir=C:\\Users\\abdul\\AppData\\Roaming\\Grammarly\\DesktopIntegrations\\WebViewUserDataFolder\\EBWebView --webview-exe-name=Grammarly.Desktop.exe --webview-exe-version=1.2.268.1900 --embedded-browser-webview=1 --embedded-browser-webview-dpi-awareness=2 --startup-read-main-dll --metrics-shmem-handle=2160,i,4793569390690460697,14845943088247002409,524288 --field-trial-handle=1936,i,12097071590019983685,12434695246574472203,262144 --variations-seed-version --pseudonymization-salt-handle=1968,i,14823992382433656507,3526552973409829809,4 --trace-process-track-uuid=3190708989122997041 --mojo-platform-channel-handle=2168 /prefetch:11 /pfhostedapp:a9a473c64ba10a553994a2c1e3981b2dd22980e3",
+      "create_time": "2026-06-13 23:32:59",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 23.00390625,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 11980,
+      "ppid": 4912,
+      "name": "Flow.exe",
+      "cmdline": "",
+      "create_time": "2026-06-07 11:52:50",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 22.8515625,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 20284,
+      "ppid": 14592,
+      "name": "Superhuman.WebUI.exe",
+      "cmdline": "C:\\Users\\abdul\\AppData\\Local\\Grammarly\\DesktopIntegrations\\Superhuman.WebUI.exe --background-worker-mode=iframe --backend-domains-kind=grammarly",
+      "create_time": "2026-06-13 23:32:56",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 22.71484375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 184,
+      "ppid": 4,
+      "name": "Registry",
+      "cmdline": "",
+      "create_time": "2026-06-07 11:50:18",
+      "username": "N/A",
+      "memory_mb": 21.3203125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 13528,
+      "ppid": 7896,
+      "name": "msedgewebview2.exe",
+      "cmdline": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\148.0.3967.96\\msedgewebview2.exe --embedded-browser-webview=1 --webview-exe-name=SearchHost.exe --webview-exe-version=2126.5604.40.0 --user-data-dir=C:\\Users\\abdul\\AppData\\Local\\Packages\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\LocalState\\EBWebView --noerrdialogs --disable-features=msSmartScreenProtection --edge-webview-enable-mojo-ipcz --enable-features=msEdgeFluentOverlayScrollbar --user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; Cortana 1.18.9.23723; 10.0.0.0.26200.8246) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.26200 IsWebView2/True (WebView2Version 148.0.3967.96) --lang=en-US --mojo-named-platform-channel-pipe=7896.12740.6978173798697025022 /pfhostedapp:37599e1bb7b5a18ad399a6557460c815ba979a31",
+      "create_time": "2026-06-07 11:53:08",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 20.37109375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 27000,
+      "ppid": 14720,
+      "name": "WINWORD.EXE",
+      "cmdline": "C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE /restore",
+      "create_time": "2026-06-13 23:04:24",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 19.95703125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 1228,
+      "ppid": 692,
+      "name": "svchost.exe",
+      "cmdline": "",
+      "create_time": "2026-06-07 11:50:45",
+      "username": "N/A",
+      "memory_mb": 19.92578125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 22012,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=6857 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=118959501463 --metrics-shmem-handle=14088,i,106820910728414367,7448844472267127609,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190715411607830087 --mojo-platform-channel-handle=16464 /prefetch:1",
+      "create_time": "2026-06-08 20:52:42",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 19.49609375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 12308,
+      "ppid": 3416,
+      "name": "taskhostw.exe",
+      "cmdline": "taskhostw.exe",
+      "create_time": "2026-06-07 12:05:51",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 19.16796875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 7344,
+      "ppid": 28304,
+      "name": "powershell.exe",
+      "cmdline": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noexit -command try { . \"c:\\Users\\abdul\\AppData\\Local\\Programs\\Microsoft VS Code\\6928394f91\\resources\\app\\out\\vs\\workbench\\contrib\\terminal\\common\\scripts\\shellIntegration.ps1\" } catch {}",
+      "create_time": "2026-06-13 22:29:06",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 18.94921875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 16200,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=13500 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=555404186792 --metrics-shmem-handle=16016,i,13595755742427371414,7398756268775610534,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190721636376832994 --mojo-platform-channel-handle=7372 /prefetch:1",
+      "create_time": "2026-06-13 22:06:05",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 18.71484375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 8816,
+      "ppid": 692,
+      "name": "svchost.exe",
+      "cmdline": "C:\\WINDOWS\\system32\\svchost.exe -k UnistackSvcGroup -s CDPUserSvc",
+      "create_time": "2026-06-07 11:52:43",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 18.5234375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 4908,
+      "ppid": 692,
+      "name": "svchost.exe",
+      "cmdline": "",
+      "create_time": "2026-06-07 11:50:48",
+      "username": "N/A",
+      "memory_mb": 18.484375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 16288,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=14106 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=560048648068 --metrics-shmem-handle=13240,i,15098476067369239701,16059602928551436875,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190722204224193488 --mojo-platform-channel-handle=15880 /prefetch:1",
+      "create_time": "2026-06-13 23:23:30",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 15.65625,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 2312,
+      "ppid": 692,
+      "name": "svchost.exe",
+      "cmdline": "",
+      "create_time": "2026-06-07 11:50:47",
+      "username": "N/A",
+      "memory_mb": 15.453125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 13188,
+      "ppid": 692,
+      "name": "svchost.exe",
+      "cmdline": "C:\\WINDOWS\\system32\\svchost.exe -k ClipboardSvcGroup -p -s cbdhsvc",
+      "create_time": "2026-06-07 11:53:02",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 15.265625,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 9792,
+      "ppid": 1228,
+      "name": "WmiPrvSE.exe",
+      "cmdline": "",
+      "create_time": "2026-06-13 23:38:03",
+      "username": "N/A",
+      "memory_mb": 15.22265625,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 4944,
+      "ppid": 692,
+      "name": "svchost.exe",
+      "cmdline": "",
+      "create_time": "2026-06-07 11:50:48",
+      "username": "N/A",
+      "memory_mb": 15.03125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 1108,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=14105 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=560047945024 --metrics-shmem-handle=5320,i,17318496545861100557,9567149350039450263,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190722203287151639 --mojo-platform-channel-handle=17872 /prefetch:1",
+      "create_time": "2026-06-13 23:23:29",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 14.45703125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 7896,
+      "ppid": 1228,
+      "name": "SearchHost.exe",
+      "cmdline": "C:\\WINDOWS\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe -ServerName:CortanaUI.AppXstmwaab17q5s3y22tp6apqz7a45vwv65.mca",
+      "create_time": "2026-06-07 11:53:04",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 14.39453125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 13116,
+      "ppid": 3648,
+      "name": "audiodg.exe",
+      "cmdline": "C:\\WINDOWS\\system32\\AUDIODG.EXE 0x000000000000058C",
+      "create_time": "2026-06-07 11:53:02",
+      "username": "N/A",
+      "memory_mb": 14.12109375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 27880,
+      "ppid": 1228,
+      "name": "RuntimeBroker.exe",
+      "cmdline": "C:\\Windows\\System32\\RuntimeBroker.exe -Embedding",
+      "create_time": "2026-06-13 23:37:51",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 14.12109375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 4384,
+      "ppid": 692,
+      "name": "svchost.exe",
+      "cmdline": "",
+      "create_time": "2026-06-07 11:53:12",
+      "username": "N/A",
+      "memory_mb": 13.65234375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 4876,
+      "ppid": 2488,
+      "name": "sihost.exe",
+      "cmdline": "sihost.exe",
+      "create_time": "2026-06-07 11:52:43",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 13.61328125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 1404,
+      "ppid": 692,
+      "name": "svchost.exe",
+      "cmdline": "",
+      "create_time": "2026-06-07 11:50:45",
+      "username": "N/A",
+      "memory_mb": 13.3359375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 20232,
+      "ppid": 412,
+      "name": "Code.exe",
+      "cmdline": "C:\\Users\\abdul\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --user-data-dir=C:\\Users\\abdul\\AppData\\Roaming\\Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --cors-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --fetch-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --field-trial-handle=1824,i,273989872145896856,11092938500150695396,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,NetworkServiceSandbox,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=1820,i,8784608032336788241,15353439274065697595,4 --trace-process-track-uuid=3190708989122997041 --mojo-platform-channel-handle=1856 /prefetch:11",
+      "create_time": "2026-06-13 22:21:56",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 13.3203125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 876,
+      "ppid": 692,
+      "name": "svchost.exe",
+      "cmdline": "",
+      "create_time": "2026-06-07 11:52:43",
+      "username": "N/A",
+      "memory_mb": 13.3046875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 1068,
+      "ppid": 1012,
+      "name": "lsass.exe",
+      "cmdline": "",
+      "create_time": "2026-06-07 11:50:44",
+      "username": "N/A",
+      "memory_mb": 12.4375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 9584,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --extension-process --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=7100 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=180721437622 --metrics-shmem-handle=7344,i,10293894026787105184,3091061366113744564,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190715639308999394 --mojo-platform-channel-handle=19060 /prefetch:9",
+      "create_time": "2026-06-09 14:01:57",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 12.18359375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 25432,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --extension-process --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=7109 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=180750255043 --metrics-shmem-handle=16668,i,3553048526418913301,15124627913955225783,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190715647742376035 --mojo-platform-channel-handle=11528 /prefetch:9",
+      "create_time": "2026-06-09 14:02:26",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 11.9140625,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 10088,
+      "ppid": 692,
+      "name": "svchost.exe",
+      "cmdline": "",
+      "create_time": "2026-06-07 11:51:25",
+      "username": "N/A",
+      "memory_mb": 11.51171875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 22720,
+      "ppid": 25732,
+      "name": "msedgewebview2.exe",
+      "cmdline": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\149.0.4022.62\\msedgewebview2.exe --type=utility --utility-sub-type=storage.mojom.StorageService --lang=en-US --service-sandbox-type=service --noerrdialogs --user-data-dir=C:\\Users\\abdul\\AppData\\Local\\com.superhuman.web-client\\EBWebView --webview-exe-name=Superhuman.WebUI.exe --webview-exe-version=2.15.7 --embedded-browser-webview=1 --embedded-browser-webview-dpi-awareness=2 --startup-read-main-dll --metrics-shmem-handle=2556,i,12874143508675080329,9678605709182054926,524288 --field-trial-handle=1948,i,18292836646736941820,13863891658705564092,262144 --disable-features=msEnhancedTrackingPreventionEnabled,msPdfOOUI,msSmartScreenProtection,msWebOOUI --variations-seed-version --pseudonymization-salt-handle=1960,i,4699976923913144792,16369833698408871408,4 --trace-process-track-uuid=3190708990060038890 --mojo-platform-channel-handle=2568 /prefetch:13 /pfhostedapp:0747045c8e6343a03cfcda3b5e1f4e3b7b6b7ae0",
+      "create_time": "2026-06-13 23:32:57",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 11.28125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 8680,
+      "ppid": 1352,
+      "name": "msedgewebview2.exe",
+      "cmdline": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\149.0.4022.62\\msedgewebview2.exe --type=utility --utility-sub-type=storage.mojom.StorageService --lang=en-US --service-sandbox-type=service --noerrdialogs --user-data-dir=C:\\Users\\abdul\\AppData\\Roaming\\Grammarly\\DesktopIntegrations\\WebViewUserDataFolder\\EBWebView --webview-exe-name=Grammarly.Desktop.exe --webview-exe-version=1.2.268.1900 --embedded-browser-webview=1 --embedded-browser-webview-dpi-awareness=2 --startup-read-main-dll --metrics-shmem-handle=2512,i,5952498370942013181,18389845153109015833,524288 --field-trial-handle=1936,i,12097071590019983685,12434695246574472203,262144 --variations-seed-version --pseudonymization-salt-handle=1968,i,14823992382433656507,3526552973409829809,4 --trace-process-track-uuid=3190708990060038890 --mojo-platform-channel-handle=2520 /prefetch:13 /pfhostedapp:a9a473c64ba10a553994a2c1e3981b2dd22980e3",
+      "create_time": "2026-06-13 23:32:59",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 11.1875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 3216,
+      "ppid": 692,
+      "name": "svchost.exe",
+      "cmdline": "",
+      "create_time": "2026-06-07 11:50:47",
+      "username": "N/A",
+      "memory_mb": 10.79296875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 23168,
+      "ppid": 692,
+      "name": "svchost.exe",
+      "cmdline": "",
+      "create_time": "2026-06-08 18:14:59",
+      "username": "N/A",
+      "memory_mb": 10.1796875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 15416,
+      "ppid": 412,
+      "name": "Code.exe",
+      "cmdline": "C:\\Users\\abdul\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --video-capture-use-gpu-memory-buffer --user-data-dir=C:\\Users\\abdul\\AppData\\Roaming\\Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --cors-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --fetch-schemes=vscode-webview,vscode-file,vscode-remote-resource,vscode-managed-remote-resource --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --field-trial-handle=1824,i,273989872145896856,11092938500150695396,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,NetworkServiceSandbox,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=1820,i,8784608032336788241,15353439274065697595,4 --trace-process-track-uuid=3190708993808206286 --mojo-platform-channel-handle=4728 /prefetch:14",
+      "create_time": "2026-06-13 22:22:04",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 10.12109375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 4004,
+      "ppid": 692,
+      "name": "svchost.exe",
+      "cmdline": "",
+      "create_time": "2026-06-07 11:52:44",
+      "username": "N/A",
+      "memory_mb": 9.734375,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 2404,
+      "ppid": 692,
+      "name": "svchost.exe",
+      "cmdline": "",
+      "create_time": "2026-06-07 11:50:46",
+      "username": "N/A",
+      "memory_mb": 9.515625,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 7360,
+      "ppid": 692,
+      "name": "svchost.exe",
+      "cmdline": "",
+      "create_time": "2026-06-07 11:50:53",
+      "username": "N/A",
+      "memory_mb": 9.21875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 27248,
+      "ppid": 11872,
+      "name": "chrome.exe",
+      "cmdline": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --extension-process --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=en-US --device-scale-factor=1.5 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=11455 --time-ticks-at-unix-epoch=-1780815017946105 --launch-time-ticks=364368218619 --metrics-shmem-handle=18428,i,12996764408630348582,6175018294974781484,2097152 --field-trial-handle=1872,i,10804910639652726275,14469182664646813306,262144 --variations-seed-version=20260606-030039.645000-production --pseudonymization-salt-handle=1896,i,8752099863977389739,14952640715634002754,4 --trace-process-track-uuid=3190719720126251789 --mojo-platform-channel-handle=7060 /prefetch:9",
+      "create_time": "2026-06-11 17:02:31",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 9.1171875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 5740,
+      "ppid": 5272,
+      "name": "msedge.exe",
+      "cmdline": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe --type=gpu-process --gpu-preferences=SAAAAAAAAADgAAAEAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --startup-read-main-dll --metrics-shmem-handle=2304,i,17432448222185463659,4100546425299795160,262144 --field-trial-handle=2384,i,3264165900449290799,14266430804939484761,262144 --variations-seed-version --pseudonymization-salt-handle=2420,i,15835269201345956374,4484654338494363674,4 --trace-process-track-uuid=3190708988185955192 --mojo-platform-channel-handle=2376 /prefetch:2",
+      "create_time": "2026-06-13 22:03:47",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 9.11328125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 5500,
+      "ppid": 692,
+      "name": "svchost.exe",
+      "cmdline": "C:\\WINDOWS\\system32\\svchost.exe -k UnistackSvcGroup -s WpnUserService",
+      "create_time": "2026-06-07 11:52:43",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 9.0625,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 5624,
+      "ppid": 1228,
+      "name": "RuntimeBroker.exe",
+      "cmdline": "C:\\Windows\\System32\\RuntimeBroker.exe -Embedding",
+      "create_time": "2026-06-07 11:53:05",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 8.98046875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 3984,
+      "ppid": 11660,
+      "name": "msedgewebview2.exe",
+      "cmdline": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\149.0.4022.52\\msedgewebview2.exe --embedded-browser-webview=1 --webview-exe-name=Widgets.exe --webview-exe-version=526.11701.10.0 --user-data-dir=C:\\Users\\abdul\\AppData\\Local\\Packages\\MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy\\LocalState\\EBWebView --noerrdialogs --disk-cache-size=52428800 --edge-webview-is-background --lang=en-US --mojo-named-platform-channel-pipe=11660.14432.1966476906656319618 /pfhostedapp:aada338517ea4da01da0f94e8b60f9e6d9637399",
+      "create_time": "2026-06-09 17:16:07",
+      "username": "DESKTOP-9AF1P50\\abdul",
+      "memory_mb": 8.8671875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 9372,
+      "ppid": 692,
+      "name": "SearchIndexer.exe",
+      "cmdline": "",
+      "create_time": "2026-06-13 23:05:00",
+      "username": "N/A",
+      "memory_mb": 8.828125,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 4912,
+      "ppid": 692,
+      "name": "CxAudioSvc.exe",
+      "cmdline": "",
+      "create_time": "2026-06-07 11:50:48",
+      "username": "N/A",
+      "memory_mb": 8.57421875,
+      "cpu_percent": 0,
+      "status": "running"
+    },
+    {
+      "pid": 9456,
+      "ppid": 692,
+      "name": "OfficeClickToRun.exe",
+      "cmdline": "",
+      "create_time": "2026-06-13 23:02:59",
+      "username": "N/A",
+      "memory_mb": 8.38671875,
+      "cpu_percent": 0,
+      "status": "running"
+    }
+  ],
+  "network_connections": [
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:58791",
+      "remote_addr": "157.240.227.60:5222",
+      "status": "ESTABLISHED",
+      "pid": 13792,
+      "process": "chrome.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "0.0.0.0:49668",
+      "remote_addr": "*:*",
+      "status": "LISTEN",
+      "pid": 4464,
+      "process": "spoolsv.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "::1:22",
+      "remote_addr": "*:*",
+      "status": "LISTEN",
+      "pid": 27632,
+      "process": "wslrelay.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:25030",
+      "remote_addr": "54.84.156.247:443",
+      "status": "ESTABLISHED",
+      "pid": 13792,
+      "process": "chrome.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:26311",
+      "remote_addr": "52.175.140.176:443",
+      "status": "CLOSE_WAIT",
+      "pid": 20232,
+      "process": "Code.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "0.0.0.0:49671",
+      "remote_addr": "*:*",
+      "status": "LISTEN",
+      "pid": 692,
+      "process": "services.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:17914",
+      "remote_addr": "104.18.12.205:443",
+      "status": "ESTABLISHED",
+      "pid": 13792,
+      "process": "chrome.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:58345",
+      "remote_addr": "163.181.112.170:443",
+      "status": "ESTABLISHED",
+      "pid": 13792,
+      "process": "chrome.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:38535",
+      "remote_addr": "54.83.205.119:443",
+      "status": "ESTABLISHED",
+      "pid": 14592,
+      "process": "Grammarly.Desktop.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:65361",
+      "remote_addr": "8.8.8.8:53",
+      "status": "TIME_WAIT",
+      "pid": 0,
+      "process": "N/A"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:31601",
+      "remote_addr": "163.181.112.169:443",
+      "status": "ESTABLISHED",
+      "pid": 13792,
+      "process": "chrome.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": ":::49668",
+      "remote_addr": "*:*",
+      "status": "LISTEN",
+      "pid": 4464,
+      "process": "spoolsv.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "0.0.0.0:3240",
+      "remote_addr": "*:*",
+      "status": "LISTEN",
+      "pid": 7596,
+      "process": "usbipd.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "127.0.0.1:21",
+      "remote_addr": "*:*",
+      "status": "LISTEN",
+      "pid": 27632,
+      "process": "wslrelay.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "0.0.0.0:49667",
+      "remote_addr": "*:*",
+      "status": "LISTEN",
+      "pid": 3416,
+      "process": "svchost.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:27329",
+      "remote_addr": "13.224.236.112:443",
+      "status": "ESTABLISHED",
+      "pid": 13792,
+      "process": "chrome.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": ":::135",
+      "remote_addr": "*:*",
+      "status": "LISTEN",
+      "pid": 1404,
+      "process": "svchost.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "127.0.0.1:6379",
+      "remote_addr": "*:*",
+      "status": "LISTEN",
+      "pid": 27632,
+      "process": "wslrelay.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:26315",
+      "remote_addr": "20.210.25.198:443",
+      "status": "ESTABLISHED",
+      "pid": 12308,
+      "process": "taskhostw.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "127.0.0.1:42023",
+      "remote_addr": "127.0.0.1:42022",
+      "status": "ESTABLISHED",
+      "pid": 14592,
+      "process": "Grammarly.Desktop.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:57725",
+      "remote_addr": "163.181.112.171:443",
+      "status": "CLOSE_WAIT",
+      "pid": 13792,
+      "process": "chrome.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:35444",
+      "remote_addr": "13.107.246.68:443",
+      "status": "ESTABLISHED",
+      "pid": 20232,
+      "process": "Code.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "0.0.0.0:445",
+      "remote_addr": "*:*",
+      "status": "LISTEN",
+      "pid": 4,
+      "process": "System"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:18935",
+      "remote_addr": "18.234.169.118:443",
+      "status": "ESTABLISHED",
+      "pid": 1648,
+      "process": "msedgewebview2.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:38537",
+      "remote_addr": "50.16.177.23:443",
+      "status": "ESTABLISHED",
+      "pid": 14592,
+      "process": "Grammarly.Desktop.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:36087",
+      "remote_addr": "34.231.77.69:443",
+      "status": "ESTABLISHED",
+      "pid": 1648,
+      "process": "msedgewebview2.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "127.0.0.1:41287",
+      "remote_addr": "*:*",
+      "status": "LISTEN",
+      "pid": 12248,
+      "process": "IDMIntegrator64.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:48288",
+      "remote_addr": "8.8.8.8:53",
+      "status": "TIME_WAIT",
+      "pid": 0,
+      "process": "N/A"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:38463",
+      "remote_addr": "18.234.169.118:443",
+      "status": "ESTABLISHED",
+      "pid": 1648,
+      "process": "msedgewebview2.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "127.0.0.1:60230",
+      "remote_addr": "*:*",
+      "status": "LISTEN",
+      "pid": 20932,
+      "process": "Code.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:56986",
+      "remote_addr": "13.224.236.5:443",
+      "status": "ESTABLISHED",
+      "pid": 14592,
+      "process": "Grammarly.Desktop.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:38533",
+      "remote_addr": "54.83.205.119:443",
+      "status": "ESTABLISHED",
+      "pid": 14592,
+      "process": "Grammarly.Desktop.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "::1:6379",
+      "remote_addr": "*:*",
+      "status": "LISTEN",
+      "pid": 27632,
+      "process": "wslrelay.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:26312",
+      "remote_addr": "98.70.192.224:443",
+      "status": "ESTABLISHED",
+      "pid": 8816,
+      "process": "svchost.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": ":::49671",
+      "remote_addr": "*:*",
+      "status": "LISTEN",
+      "pid": 692,
+      "process": "services.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "0.0.0.0:135",
+      "remote_addr": "*:*",
+      "status": "LISTEN",
+      "pid": 1404,
+      "process": "svchost.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:9312",
+      "remote_addr": "34.36.73.246:443",
+      "status": "ESTABLISHED",
+      "pid": 13792,
+      "process": "chrome.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": ":::49667",
+      "remote_addr": "*:*",
+      "status": "LISTEN",
+      "pid": 3416,
+      "process": "svchost.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:12725",
+      "remote_addr": "47.84.82.196:443",
+      "status": "ESTABLISHED",
+      "pid": 13792,
+      "process": "chrome.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": ":::7680",
+      "remote_addr": "*:*",
+      "status": "LISTEN",
+      "pid": 10088,
+      "process": "svchost.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "0.0.0.0:33060",
+      "remote_addr": "*:*",
+      "status": "LISTEN",
+      "pid": 6572,
+      "process": "mysqld.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:8658",
+      "remote_addr": "8.8.8.8:53",
+      "status": "TIME_WAIT",
+      "pid": 0,
+      "process": "N/A"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:45848",
+      "remote_addr": "20.205.69.80:443",
+      "status": "ESTABLISHED",
+      "pid": 20232,
+      "process": "Code.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:35596",
+      "remote_addr": "172.188.155.25:443",
+      "status": "ESTABLISHED",
+      "pid": 3556,
+      "process": "msedge.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "127.0.0.1:22",
+      "remote_addr": "*:*",
+      "status": "LISTEN",
+      "pid": 27632,
+      "process": "wslrelay.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "127.0.0.1:41287",
+      "remote_addr": "127.0.0.1:26364",
+      "status": "ESTABLISHED",
+      "pid": 12248,
+      "process": "IDMIntegrator64.exe"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:139",
+      "remote_addr": "*:*",
+      "status": "LISTEN",
+      "pid": 4,
+      "process": "System"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:49207",
+      "remote_addr": "8.8.8.8:53",
+      "status": "TIME_WAIT",
+      "pid": 0,
+      "process": "N/A"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:48246",
+      "remote_addr": "8.8.8.8:53",
+      "status": "TIME_WAIT",
+      "pid": 0,
+      "process": "N/A"
+    },
+    {
+      "protocol": "TCP",
+      "local_addr": "192.168.10.3:48879",
+      "remote_addr": "3.210.166.27:443",
+      "status": "ESTABLISHED",
+      "pid": 14592,
+      "process": "Grammarly.Desktop.exe"
+    }
+  ],
+  "suspicious_indicators": [
+    {
+      "type": "NETWORK",
+      "indicator": "Port 22",
+      "description": "SSH (monitor for reverse tunnels)",
+      "pid": 27632,
+      "process": "wslrelay.exe",
+      "local_addr": "::1:22",
+      "severity": "MEDIUM"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 54.84.156.247:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 13792,
+      "process": "chrome.exe",
+      "remote_addr": "54.84.156.247:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 104.18.12.205:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 13792,
+      "process": "chrome.exe",
+      "remote_addr": "104.18.12.205:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 163.181.112.170:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 13792,
+      "process": "chrome.exe",
+      "remote_addr": "163.181.112.170:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 54.83.205.119:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 14592,
+      "process": "Grammarly.Desktop.exe",
+      "remote_addr": "54.83.205.119:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 163.181.112.169:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 13792,
+      "process": "chrome.exe",
+      "remote_addr": "163.181.112.169:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "NETWORK",
+      "indicator": "Port 21",
+      "description": "FTP (cleartext - data exfiltration risk)",
+      "pid": 27632,
+      "process": "wslrelay.exe",
+      "local_addr": "127.0.0.1:21",
+      "severity": "MEDIUM"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 13.224.236.112:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 13792,
+      "process": "chrome.exe",
+      "remote_addr": "13.224.236.112:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 20.210.25.198:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 12308,
+      "process": "taskhostw.exe",
+      "remote_addr": "20.210.25.198:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 13.107.246.68:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 20232,
+      "process": "Code.exe",
+      "remote_addr": "13.107.246.68:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 18.234.169.118:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 1648,
+      "process": "msedgewebview2.exe",
+      "remote_addr": "18.234.169.118:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 50.16.177.23:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 14592,
+      "process": "Grammarly.Desktop.exe",
+      "remote_addr": "50.16.177.23:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 34.231.77.69:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 1648,
+      "process": "msedgewebview2.exe",
+      "remote_addr": "34.231.77.69:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 18.234.169.118:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 1648,
+      "process": "msedgewebview2.exe",
+      "remote_addr": "18.234.169.118:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 13.224.236.5:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 14592,
+      "process": "Grammarly.Desktop.exe",
+      "remote_addr": "13.224.236.5:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 54.83.205.119:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 14592,
+      "process": "Grammarly.Desktop.exe",
+      "remote_addr": "54.83.205.119:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 98.70.192.224:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 8816,
+      "process": "svchost.exe",
+      "remote_addr": "98.70.192.224:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 34.36.73.246:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 13792,
+      "process": "chrome.exe",
+      "remote_addr": "34.36.73.246:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 47.84.82.196:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 13792,
+      "process": "chrome.exe",
+      "remote_addr": "47.84.82.196:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 20.205.69.80:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 20232,
+      "process": "Code.exe",
+      "remote_addr": "20.205.69.80:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "NETWORK",
+      "indicator": "Port 22",
+      "description": "SSH (monitor for reverse tunnels)",
+      "pid": 27632,
+      "process": "wslrelay.exe",
+      "local_addr": "127.0.0.1:22",
+      "severity": "MEDIUM"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 3.210.166.27:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 14592,
+      "process": "Grammarly.Desktop.exe",
+      "remote_addr": "3.210.166.27:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 104.18.30.173:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 13792,
+      "process": "chrome.exe",
+      "remote_addr": "104.18.30.173:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 20.205.69.80:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 20232,
+      "process": "Code.exe",
+      "remote_addr": "20.205.69.80:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 3.225.151.246:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 14592,
+      "process": "Grammarly.Desktop.exe",
+      "remote_addr": "3.225.151.246:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 18.234.169.118:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 1648,
+      "process": "msedgewebview2.exe",
+      "remote_addr": "18.234.169.118:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 4.213.25.242:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 5260,
+      "process": "svchost.exe",
+      "remote_addr": "4.213.25.242:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 74.125.133.188:5228",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 13792,
+      "process": "chrome.exe",
+      "remote_addr": "74.125.133.188:5228",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 3.173.21.63:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 13792,
+      "process": "chrome.exe",
+      "remote_addr": "3.173.21.63:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 34.107.205.1:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 13792,
+      "process": "chrome.exe",
+      "remote_addr": "34.107.205.1:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 52.175.140.176:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 20232,
+      "process": "Code.exe",
+      "remote_addr": "52.175.140.176:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 142.251.127.188:5228",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 13792,
+      "process": "chrome.exe",
+      "remote_addr": "142.251.127.188:5228",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 34.36.73.246:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 13792,
+      "process": "chrome.exe",
+      "remote_addr": "34.36.73.246:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 18.234.169.118:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 1648,
+      "process": "msedgewebview2.exe",
+      "remote_addr": "18.234.169.118:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 13.89.179.10:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 20232,
+      "process": "Code.exe",
+      "remote_addr": "13.89.179.10:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 163.181.112.170:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 13792,
+      "process": "chrome.exe",
+      "remote_addr": "163.181.112.170:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 34.149.212.60:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 20232,
+      "process": "Code.exe",
+      "remote_addr": "34.149.212.60:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 54.146.107.202:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 13792,
+      "process": "chrome.exe",
+      "remote_addr": "54.146.107.202:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 3.173.21.63:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 13792,
+      "process": "chrome.exe",
+      "remote_addr": "3.173.21.63:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 3.216.6.12:443",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 14592,
+      "process": "Grammarly.Desktop.exe",
+      "remote_addr": "3.216.6.12:443",
+      "severity": "LOW"
+    },
+    {
+      "type": "SUSPICIOUS_CONNECTION",
+      "indicator": "External connection to 50.118.166.217:80",
+      "description": "Unknown external connection - investigate if unexpected",
+      "pid": 13792,
+      "process": "chrome.exe",
+      "remote_addr": "50.118.166.217:80",
+      "severity": "LOW"
+    }
+  ]
+}

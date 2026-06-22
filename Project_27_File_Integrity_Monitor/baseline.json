@@ -1,0 +1,32 @@
+{
+  "created": "2026-06-19T13:59:14.734925",
+  "target": "/mnt/d/100 Projects Challenge/Project_27_File_Integrity_Monitor/test_fim",
+  "exclusions": [],
+  "total_files": 3,
+  "files": {
+    "file1.txt": {
+      "hash": "c87e2ca771bab6024c269b933389d2a92d4941c848c52f155b9b84e1f109fe35",
+      "size": 20,
+      "permissions": "777",
+      "mtime": 1781859461.786397,
+      "uid": 1000,
+      "gid": 1000
+    },
+    "file2.txt": {
+      "hash": "2f35e5ed0b37d7cd0bf12cf07118665ccf1bc09ee54a55efb1e733c8e0181011",
+      "size": 18,
+      "permissions": "777",
+      "mtime": 1781859461.7973943,
+      "uid": 1000,
+      "gid": 1000
+    },
+    "subdir/file3.txt": {
+      "hash": "33008bf127acca6e47249b311652515c5803249d25db5951da9f296297c6feae",
+      "size": 21,
+      "permissions": "777",
+      "mtime": 1781859461.8173978,
+      "uid": 1000,
+      "gid": 1000
+    }
+  }
+}

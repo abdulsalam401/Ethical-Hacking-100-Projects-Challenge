@@ -1,0 +1,57 @@
+{
+    "sql_injection": {
+        "patterns": [
+            "('.*OR.*'.*='|%27.*OR.*%27.*%3D|;.*--|UNION.*SELECT|' OR '1'='1|' OR 1=1|SELECT.*FROM|INSERT.*INTO|DELETE.*FROM|DROP.*TABLE|1=1;|' OR 1=1 --)",
+            "\\\" OR \\\"1\\\"=\\\"1",
+            "OR 1=1",
+            "AND 1=1",
+            "information_schema",
+            "sleep\\([0-9]+\\)",
+            "benchmark\\([0-9]+,"
+        ],
+        "severity": "HIGH",
+        "action": "BLOCK",
+        "description": "SQL Injection attempt"
+    },
+    "xss": {
+        "patterns": [
+            "<script>",
+            "alert\\(",
+            "onerror=",
+            "javascript:",
+            "document\\.cookie",
+            "onload=",
+            "onmouseover=",
+            "onclick=",
+            "<iframe",
+            "onerror"
+        ],
+        "severity": "MEDIUM",
+        "action": "BLOCK",
+        "description": "Cross-Site Scripting (XSS) attempt"
+    },
+    "path_traversal": {
+        "patterns": [
+            "\\.\\./\\.\\./",
+            "/etc/passwd",
+            "/etc/shadow",
+            "/proc/self/environ",
+            "C:\\\\Windows\\\\System32",
+            "%2e%2e%2f",
+            "%2e%2e/"
+        ],
+        "severity": "HIGH",
+        "action": "BLOCK",
+        "description": "Path traversal attempt"
+    },
+    "command_injection": {
+        "patterns": [
+            ";\\s*(ls|whoami|cat|echo|nc|bash|sh|curl|wget|id|uname|pwd|netstat|dir|type|del|rm|mkdir|ping)",
+            "&&\\s*(ls|whoami|cat|echo|nc)",
+            "\\|\\s*(ls|whoami|cat|echo)"
+        ],
+        "severity": "HIGH",
+        "action": "BLOCK",
+        "description": "Command injection attempt"
+    }
+}

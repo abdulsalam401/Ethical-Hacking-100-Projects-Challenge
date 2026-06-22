@@ -1,0 +1,5 @@
+Name: John Doe
+Email: john@example.com
+Phone: 555-1234
+Address: 123 Main St
+SSN: 123-45-6789
