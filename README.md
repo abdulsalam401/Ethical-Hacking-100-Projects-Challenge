@@ -59,6 +59,7 @@ This table catalogs all completed security research projects, linking to their r
 | 32 | **Ethereum Blockchain Explorer & Smart Contract Auditor** | A Web3 auditing tool. | `Python 3`, `web3`, `re` | [View Project](./Project_29_Blockchain_Explorer_And_Smart_Contract%20Analyzer) |
 | 33 | **Tor-Routed Dark Web Intelligence Scraper** | A threat intelligence scraper that routes requests through the local Tor network SOCKS5 proxy to search onion sites for keywords and compile results into HTML reports.. | `Python 3`, `requests`, `Tor SOCKS5 proxy` | [View Project](./Project_30_Dark_Web_Scraper) |
 | 34 | **Antivirus Evasion & Crypter File Packer** | An educational crypter / file packer utility that packages compiled binaries or scripts inside a secure, self-extracting, and executing Python stub. | `Python 3`, `cryptography (Fernet)`, `base64` | [View Project](./Project_31_Antivirus_Evasion—File_Packer) |
+| 35 | **Cloud Security Scanner & S3 Permission Auditor** | A dual-mode cloud security auditing tool designed to scan and evaluate local and production AWS S3 bucket configurations for public exposure. | `Python 3`, `boto3` | [View Project](./Project_32_Cloud_Security_Scanner) |
 
 ---
 
