@@ -60,6 +60,8 @@ This table catalogs all completed security research projects, linking to their r
 | 33 | **Tor-Routed Dark Web Intelligence Scraper** | A threat intelligence scraper that routes requests through the local Tor network SOCKS5 proxy to search onion sites for keywords and compile results into HTML reports.. | `Python 3`, `requests`, `Tor SOCKS5 proxy` | [View Project](./Project_30_Dark_Web_Scraper) |
 | 34 | **Antivirus Evasion & Crypter File Packer** | An educational crypter / file packer utility that packages compiled binaries or scripts inside a secure, self-extracting, and executing Python stub. | `Python 3`, `cryptography (Fernet)`, `base64` | [View Project](./Project_31_Antivirus_Evasion—File_Packer) |
 | 35 | **Cloud Security Scanner & S3 Permission Auditor** | A dual-mode cloud security auditing tool designed to scan and evaluate local and production AWS S3 bucket configurations for public exposure. | `Python 3`, `boto3` | [View Project](./Project_32_Cloud_Security_Scanner) |
+| 36 | **Multi-Threaded Password Cracker & Hash Matcher** | A cryptographic credential strength auditor matching digests against mutations, static rainbow tables, and thread-pooled brute forcing. | `Python 3`, `bcrypt` | [View Project](./Project_33_Password_Cracker) |
+| 37 | **IoT Device Scanner & UPnP Security Auditor** | An IoT scanner using SSDP multicast discovery and XML schema profiling to audit local network UPnP exposures. | `Python 3`, `requests` | [View Project](./Project_34_IoT_Scanner) |
 
 ---
 
