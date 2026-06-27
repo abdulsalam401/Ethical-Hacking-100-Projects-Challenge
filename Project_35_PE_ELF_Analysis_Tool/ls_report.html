@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Binary Analysis Report</title>
+    <style>
+        body {font-family:'Segoe UI',sans-serif;background:#1a1a2e;color:#e0e0e0;padding:20px;}
+        .container {max-width:1200px;margin:0 auto;}
+        .header {background:linear-gradient(135deg,#16213e,#0f3460);padding:30px;border-radius:10px;margin-bottom:20px;}
+        .header h1 {color:#00d4ff;}
+        .risk-score {font-size:48px;font-weight:bold;text-align:center;padding:20px;}
+        .risk-{risk_level.lower()} {color:#00ff88;}
+        .section {background:#2d2d44;padding:20px;border-radius:10px;margin:15px 0;}
+        .section h2 {color:#00d4ff;border-bottom:1px solid #3d3d5a;padding-bottom:10px;}
+        .stat-box {display:inline-block;background:#1a1a3e;padding:15px;border-radius:8px;margin:5px;min-width:150px;}
+        .stat-box .value {font-size:24px;font-weight:bold;color:#00d4ff;}
+        .stat-box .label {color:#888;font-size:12px;}
+        .finding {background:#2d2d44;padding:15px;margin:10px 0;border-radius:8px;border-left:4px solid #ffa500;}
+        .finding.high {border-color:#ff0040;}
+        .finding.medium {border-color:#ffa500;}
+        .finding.low {border-color:#4a90d9;}
+        .finding .sev {font-weight:bold;}
+        table {width:100%;border-collapse:collapse;margin:10px 0;}
+        th, td {padding:10px;text-align:left;border-bottom:1px solid #3d3d5a;}
+        th {color:#00d4ff;}
+        .defense {background:#0f3460;padding:15px;border-radius:8px;margin-top:20px;}
+        .defense h3 {color:#00d4ff;}
+        .defense td {color:#ccc;padding:5px;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>🔍 Binary Analysis Report</h1>
+        <p>File: ls</p>
+        <p>Type: ELF</p>
+        <p>Generated: 2026-06-27 15:37:15</p>
+    </div>
+    
+    <div class="section">
+        <h2>📊 Risk Assessment</h2>
+        <div class="risk-score risk-low">15/100</div>
+        <p style="text-align:center;">Risk Level: <strong>LOW</strong></p>
+        <p style="text-align:center;color:#888;">1 security issues found</p>
+    </div>
+    
+    <div class="section">
+        <h2>📋 File Information</h2>
+        <div>
+            <div class="stat-box"><div class="value">ELF</div><div class="label">File Type</div></div>
+            <div class="stat-box"><div class="value">0x6d30</div><div class="label">Entry Point</div></div>
+            <div class="stat-box"><div class="value">31</div><div class="label">Sections</div></div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>⚠️ Security Issues</h2>
+        <div class="finding medium">
+            <span class="sev">[MEDIUM]</span>
+            <strong>STACK_CANARY_MISSING</strong>
+            <p>Stack canary not detected</p>
+            <p style="color:#888;font-size:12px;">→ Use -fstack-protector-strong compiler flag</p>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>📦 Sections</h2>
+        <table>
+            <tr><th>Name</th><th>Size (bytes)</th><th>Address</th></tr>
+            <tr>
+                <td></td>
+                <td>0</td>
+                <td>0x0</td>
+            </tr>
+            <tr>
+                <td>.interp</td>
+                <td>28</td>
+                <td>0x318</td>
+            </tr>
+            <tr>
+                <td>.note.gnu.property</td>
+                <td>48</td>
+                <td>0x338</td>
+            </tr>
+            <tr>
+                <td>.note.gnu.build-id</td>
+                <td>36</td>
+                <td>0x368</td>
+            </tr>
+            <tr>
+                <td>.note.ABI-tag</td>
+                <td>32</td>
+                <td>0x38c</td>
+            </tr>
+            <tr>
+                <td>.gnu.hash</td>
+                <td>80</td>
+                <td>0x3b0</td>
+            </tr>
+            <tr>
+                <td>.dynsym</td>
+                <td>3072</td>
+                <td>0x400</td>
+            </tr>
+            <tr>
+                <td>.dynstr</td>
+                <td>1556</td>
+                <td>0x1000</td>
+            </tr>
+            <tr>
+                <td>.gnu.version</td>
+                <td>256</td>
+                <td>0x1614</td>
+            </tr>
+            <tr>
+                <td>.gnu.version_r</td>
+                <td>240</td>
+                <td>0x1718</td>
+            </tr>
+            <tr>
+                <td>.rela.dyn</td>
+                <td>5424</td>
+                <td>0x1808</td>
+            </tr>
+            <tr>
+                <td>.rela.plt</td>
+                <td>2496</td>
+                <td>0x2d38</td>
+            </tr>
+            <tr>
+                <td>.init</td>
+                <td>27</td>
+                <td>0x4000</td>
+            </tr>
+            <tr>
+                <td>.plt</td>
+                <td>1680</td>
+                <td>0x4020</td>
+            </tr>
+            <tr>
+                <td>.plt.got</td>
+                <td>64</td>
+                <td>0x46b0</td>
+            </tr>
+            <tr>
+                <td>.plt.sec</td>
+                <td>1664</td>
+                <td>0x46f0</td>
+            </tr>
+            <tr>
+                <td>.text</td>
+                <td>82370</td>
+                <td>0x4d70</td>
+            </tr>
+            <tr>
+                <td>.fini</td>
+                <td>13</td>
+                <td>0x18f34</td>
+            </tr>
+            <tr>
+                <td>.rodata</td>
+                <td>20847</td>
+                <td>0x19000</td>
+            </tr>
+            <tr>
+                <td>.eh_frame_hdr</td>
+                <td>1516</td>
+                <td>0x1e170</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="section">
+        <h2>📥 Imports</h2><ul><li>libselinux.so.1</li><li>libc.so.6</li></ul>
+    </div>
+    
+    <div class="section defense">
+        <h3>🛡️ Defenses Against Binary Analysis</h3>
+        <table>
+            <tr><th>Technique</th><th>Description</th></tr>
+            <tr><td>Obfuscation</td><td>Make analysis harder</td></tr>
+            <tr><td>Packing</td><td>Compress/encrypt executable</td></tr>
+            <tr><td>Anti-debugging</td><td>Detect debuggers</td></tr>
+            <tr><td>Anti-disassembly</td><td>Confuse disassemblers</td></tr>
+            <tr><td>Code Encryption</td><td>Encrypt sections</td></tr>
+        </table>
+    </div>
+    
+    <div style="text-align:center;color:#666;margin-top:30px;font-size:12px;">
+        <p>Generated by Binary Analyzer | 100 Ethical Hacking Projects</p>
+    </div>
+</div>
+</body>
+</html>

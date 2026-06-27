@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Binary Analysis Report</title>
+    <style>
+        body {font-family:'Segoe UI',sans-serif;background:#1a1a2e;color:#e0e0e0;padding:20px;}
+        .container {max-width:1200px;margin:0 auto;}
+        .header {background:linear-gradient(135deg,#16213e,#0f3460);padding:30px;border-radius:10px;}
+        .header h1 {color:#00d4ff;}
+        .risk-score {font-size:48px;font-weight:bold;text-align:center;padding:20px;}
+        .risk-low {color:#00ff88;}
+        .risk-medium {color:#ffa500;}
+        .risk-high {color:#ff4444;}
+        .risk-critical {color:#ff0040;}
+        .section {background:#2d2d44;padding:20px;border-radius:10px;margin:15px 0;}
+        .section h2 {color:#00d4ff;border-bottom:1px solid #3d3d5a;padding-bottom:10px;}
+        .stat-box {display:inline-block;background:#1a1a3e;padding:15px;border-radius:8px;margin:5px;min-width:150px;}
+        .stat-box .value {font-size:24px;font-weight:bold;color:#00d4ff;}
+        .stat-box .label {color:#888;font-size:12px;}
+        .finding {background:#2d2d44;padding:15px;margin:10px 0;border-radius:8px;border-left:4px solid #ffa500;}
+        .finding.high {border-color:#ff0040;}
+        .finding.medium {border-color:#ffa500;}
+        .finding.low {border-color:#4a90d9;}
+        table {width:100%;border-collapse:collapse;margin:10px 0;}
+        th, td {padding:10px;text-align:left;border-bottom:1px solid #3d3d5a;}
+        th {color:#00d4ff;}
+        .defense {background:#0f3460;padding:15px;border-radius:8px;margin-top:20px;}
+        .defense h3 {color:#00d4ff;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>🔍 Binary Analysis Report</h1>
+        <p>File: calc.exe</p>
+        <p>Type: PE</p>
+        <p>Generated: 2026-06-27 15:45:48</p>
+    </div>
+    
+    <div class="section">
+        <h2>📊 Risk Assessment</h2>
+        <div class="risk-score risk-medium">30/100</div>
+        <p style="text-align:center;">Risk Level: <strong>MEDIUM</strong></p>
+        <p style="text-align:center;color:#888;">3 security issues found</p>
+    </div>
+    
+    <div class="section">
+        <h2>📋 File Information</h2>
+        <div>
+            <div class="stat-box"><div class="value">PE</div><div class="label">Type</div></div>
+            <div class="stat-box"><div class="value">0x1740</div><div class="label">Entry Point</div></div>
+            <div class="stat-box"><div class="value">7</div><div class="label">Sections</div></div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>⚠️ Security Issues</h2>
+        <div class="finding medium">
+            <span style="font-weight:bold;">[MEDIUM]</span>
+            <strong>STACK_COOKIE_MISSING</strong>
+            <p>Stack cookie (/GS) not detected</p>
+            <p style="color:#888;font-size:12px;">→ Enable /GS linker flag</p>
+        </div>
+        <div class="finding medium">
+            <span style="font-weight:bold;">[MEDIUM]</span>
+            <strong>CODE_SIGNING_MISSING</strong>
+            <p>Code signing not detected</p>
+            <p style="color:#888;font-size:12px;">→ Sign the binary with a certificate</p>
+        </div>
+        <div class="finding low">
+            <span style="font-weight:bold;">[LOW]</span>
+            <strong>SAFESEH_DISABLED</strong>
+            <p>SafeSEH not enabled</p>
+            <p style="color:#888;font-size:12px;">→ Enable /SAFESEH linker flag</p>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>📦 Sections</h2>
+        <table>
+            <tr><th>Name</th><th>Size (bytes)</th><th>Address</th></tr>
+            <tr>
+                <td>.text</td>
+                <td>3248</td>
+                <td>0x1000</td>
+            </tr>
+            <tr>
+                <td>fothk</td>
+                <td>4096</td>
+                <td>0x2000</td>
+            </tr>
+            <tr>
+                <td>.rdata</td>
+                <td>3560</td>
+                <td>0x3000</td>
+            </tr>
+            <tr>
+                <td>.data</td>
+                <td>1728</td>
+                <td>0x4000</td>
+            </tr>
+            <tr>
+                <td>.pdata</td>
+                <td>264</td>
+                <td>0x5000</td>
+            </tr>
+            <tr>
+                <td>.rsrc</td>
+                <td>18192</td>
+                <td>0x6000</td>
+            </tr>
+            <tr>
+                <td>.reloc</td>
+                <td>148</td>
+                <td>0xb000</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="section">
+        <h2>📥 Imports</h2><p><strong>SHELL32.dll</strong></p><ul><li>ShellExecuteW</li></ul><p><strong>KERNEL32.dll</strong></p><ul><li>GetCurrentThreadId</li><li>GetSystemTimeAsFileTime</li><li>GetTickCount</li><li>RtlCaptureContext</li><li>GetCurrentProcessId</li><li>RtlVirtualUnwind</li><li>UnhandledExceptionFilter</li><li>SetUnhandledExceptionFilter</li><li>GetCurrentProcess</li><li>TerminateProcess</li></ul><p><strong>msvcrt.dll</strong></p><ul><li>__setusermatherr</li><li>_initterm</li><li>__C_specific_handler</li><li>memset</li><li>_wcmdln</li><li>_fmode</li><li>_commode</li><li>__wgetmainargs</li><li>_exit</li><li>_amsg_exit</li></ul><p><strong>ADVAPI32.dll</strong></p><ul><li>EventSetInformation</li><li>EventWriteTransfer</li><li>EventRegister</li></ul><p><strong>api-ms-win-core-synch-l1-2-0.dll</strong></p><ul><li>Sleep</li></ul><p><strong>api-ms-win-core-processthreads-l1-1-0.dll</strong></p><ul><li>GetStartupInfoW</li></ul><p><strong>api-ms-win-core-libraryloader-l1-2-0.dll</strong></p><ul><li>GetModuleHandleW</li></ul>
+    </div>
+    
+    <div class="section defense">
+        <h3>🛡️ Defenses Against Binary Analysis</h3>
+        <table>
+            <tr><th>Technique</th><th>Description</th></tr>
+            <tr><td>Obfuscation</td><td>Make analysis harder</td></tr>
+            <tr><td>Packing</td><td>Compress/encrypt executable</td></tr>
+            <tr><td>Anti-debugging</td><td>Detect debuggers</td></tr>
+            <tr><td>Anti-disassembly</td><td>Confuse disassemblers</td></tr>
+            <tr><td>Code Encryption</td><td>Encrypt sections</td></tr>
+        </table>
+    </div>
+    
+    <div style="text-align:center;color:#666;margin-top:30px;font-size:12px;">
+        <p>Generated by Binary Analyzer | 100 Ethical Hacking Projects</p>
+    </div>
+</div>
+</body>
+</html>
