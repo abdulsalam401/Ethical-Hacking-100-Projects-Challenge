@@ -1,4 +1,4 @@
-<img width="260" height="260" alt="image" src="https://github.com/user-attachments/assets/7475d562-42cd-48db-b63b-f82bc1bc3c85" />
+<p allign="center"><img width="260" height="260" alt="image" src="https://github.com/user-attachments/assets/7475d562-42cd-48db-b63b-f82bc1bc3c85" /></p>
 
 # 🛡️ Ethical Hacking 100 Projects Challenge
 
