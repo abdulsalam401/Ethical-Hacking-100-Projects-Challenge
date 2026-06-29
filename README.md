@@ -2,7 +2,7 @@
   <img src="https://github.com/user-attachments/assets/7475d562-42cd-48db-b63b-f82bc1bc3c85"
        alt="Ethical Hacking 100 Projects Challenge Banner"
        width="100%"
-       style="max-width: 1100px; height: auto; display: block; margin: 0 auto;" />
+       style="max-width: 260px; height: auto; display: block; margin: 0 auto;" />
 </p>
 
 # 🛡️ Ethical Hacking 100 Projects Challenge
