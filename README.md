@@ -12,6 +12,14 @@
   <img src="https://img.shields.io/badge/platform-windows%20%7C%20linux-lightgrey?style=for-the-badge" alt="Platform Support" />
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/progress-39%20%2F%20100%20projects-00d4ff?style=for-the-badge" alt="Progress" />
+</p>
+
+<p align="center">
+  <code>███████████████░░░░░░░░░░░░░░░░░░░░░░░░░░ 39%</code>
+</p>
+
 ---
 
 ## 📖 Welcome
@@ -57,7 +65,7 @@ Welcome to the **Ethical Hacking 100 Projects Challenge** repository! This is a 
 
 ## 📂 Project Catalog by Security Domain
 
-To make browsing these 38 projects simple, they have been classified into four cybersecurity categories. Click on a category header to expand the projects index.
+To make browsing these **39 projects** simple, they have been classified into four cybersecurity categories. Click on a category header to expand the projects index.
 
 ### 🌐 Category 1: Network Auditing & Packet Sniffing
 <details>
@@ -100,7 +108,7 @@ To make browsing these 38 projects simple, they have been classified into four c
 
 ### ☁️ Category 3: Web Application & Cloud Security
 <details>
-<summary><b>Expand Web & Cloud Projects (7 Projects)</b></summary>
+<summary><b>Expand Web & Cloud Projects (8 Projects)</b></summary>
 <br>
 
 | # | Project Name | Description | Key Tech Stack | Link |
@@ -112,6 +120,7 @@ To make browsing these 38 projects simple, they have been classified into four c
 | 28 | **Web Vulnerability Mapper & Crawler** | Crawls forms and tests them for reflective XSS and basic issues. | `Python 3`, `requests`, `BeautifulSoup4` | [View Project](./Project_25_Vulnerability_Scanner_Web_Application) |
 | 33 | **Tor Threat Intelligence Scraper** | Onion web query scraper routing traffic via local Tor proxy. | `Python 3`, `requests`, `Tor SOCKS5` | [View Project](./Project_30_Dark_Web_Scraper) |
 | 35 | **AWS Cloud S3 Security Auditor** | Evaluates bucket configuration policies for public exposure risks. | `Python 3`, `boto3` | [View Project](./Project_32_Cloud_Security_Scanner) |
+| 39 | **SQL Injection Exploitation Tool** | Multi-technique SQLi detection and data extraction framework. | `Python 3`, `requests`, `BeautifulSoup4` | [View Project](./Project_36_SQL_Injection_Exploitation_Tool) |
 
 </details>
 
