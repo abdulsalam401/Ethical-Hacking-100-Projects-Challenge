@@ -26,7 +26,7 @@
 ## 🚀 Quick Navigation
 
 - [📘 Overview](#-overview)
-- [📂 Numbered Project Index](#-numbered-project-index)
+- [📂 Project Index](#-project-index)
 - [⚙️ Quick Start](#️-quick-start)
 - [🧭 Learning Path Suggestion](#-learning-path-suggestion)
 - [⚠️ Ethical & Legal Notice](#️-ethical--legal-notice)
@@ -50,7 +50,7 @@ Each project focuses on real cybersecurity concepts such as:
 
 ---
 
-## 📂 Numbered Project Index
+## 📂 Project Index
 
 1. [Project 01: Packet Sniffer](./Project_01_Packet_Sniffer)
 2. [Project 02: Port Scanner](./Project_02_Port_Scanner)
