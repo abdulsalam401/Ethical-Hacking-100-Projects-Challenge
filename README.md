@@ -1,32 +1,56 @@
-# 🛡️ Ethical Hacking 100 Projects Challenge
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7475d562-42cd-48db-b63b-f82bc1bc3c85" alt="Ethical Hacking 100 Projects Challenge Banner" width="55%" />
+</p>
+
+<h1 align="center">🛡️ Ethical Hacking 100 Projects Challenge</h1>
 
 <p align="center">
-  <a href="https://github.com/abdulsalam401/Ethical-Hacking-100-Projects-Challenge">
-    <img src="https://img.shields.io/github/stars/abdulsalam401/Ethical-Hacking-100-Projects-Challenge?style=for-the-badge" alt="GitHub stars" />
+  <a href="https://github.com/abdulsalam401/Ethical-Hacking-100-Projects-Challenge/stargazers">
+    <img src="https://img.shields.io/github/stars/abdulsalam401/Ethical-Hacking-100-Projects-Challenge?style=for-the-badge&logo=github" alt="Stars" />
   </a>
-  <a href="https://github.com/abdulsalam401/Ethical-Hacking-100-Projects-Challenge/forks">
-    <img src="https://img.shields.io/github/forks/abdulsalam401/Ethical-Hacking-100-Projects-Challenge?style=for-the-badge" alt="GitHub forks" />
+  <a href="https://github.com/abdulsalam401/Ethical-Hacking-100-Projects-Challenge/network/members">
+    <img src="https://img.shields.io/github/forks/abdulsalam401/Ethical-Hacking-100-Projects-Challenge?style=for-the-badge&logo=github" alt="Forks" />
   </a>
-  <img src="https://img.shields.io/badge/python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python Version" />
-  <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" alt="License" />
+  <img src="https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/License-MIT-2ea44f?style=for-the-badge" alt="License" />
 </p>
 
 <p align="center">
-  A hands-on cybersecurity learning journey with practical, ethical hacking projects.
+  <img src="https://img.shields.io/badge/Progress-39%20%2F%20100-0ea5e9?style=flat-square" alt="Progress" />
 </p>
 
----
-
-## 📘 About This Repository
-
-This repository contains projects built as part of the **Ethical Hacking 100 Projects Challenge**.
-The goal is to practice offensive and defensive security concepts through practical, educational implementations.
-
-> ⚠️ **For educational and authorized security testing only.**
+<p align="center"><b>Hands-on cybersecurity projects for practical ethical hacking and defensive security learning.</b></p>
 
 ---
 
-## 📂 Project List (Numbered)
+## 🚀 Quick Navigation
+
+- [📘 Overview](#-overview)
+- [📂 Numbered Project Index](#-numbered-project-index)
+- [⚙️ Quick Start](#️-quick-start)
+- [🧭 Learning Path Suggestion](#-learning-path-suggestion)
+- [⚠️ Ethical & Legal Notice](#️-ethical--legal-notice)
+- [👤 Maintainer](#-maintainer)
+- [📄 License](#-license)
+
+---
+
+## 📘 Overview
+
+This repository documents my **Ethical Hacking 100 Projects Challenge** journey.
+Each project focuses on real cybersecurity concepts such as:
+
+- Network analysis and traffic inspection
+- Vulnerability discovery and assessment
+- Malware simulation in controlled environments
+- Forensics and system monitoring
+- Secure coding and defensive tooling
+
+> ✅ Purpose: **education, research, and authorized security testing only**.
+
+---
+
+## 📂 Numbered Project Index
 
 1. [Project 01: Packet Sniffer](./Project_01_Packet_Sniffer)
 2. [Project 02: Port Scanner](./Project_02_Port_Scanner)
@@ -37,7 +61,7 @@ The goal is to practice offensive and defensive security concepts through practi
 7. [Project 07: FTP Cracker](./Project_07_FTP_Cracker)
 8. [Project 08: SSH Cracker](./Project_08_SSH_Cracker)
 9. [Project 09: SQL Scanner](./Project_09_SQL_Scanner)
-10. [Project 10: Keylogger with Email](./Project_10_Keylogger_with_Email_Exfiltration)
+10. [Project 10: Keylogger with Email Exfiltration](./Project_10_Keylogger_with_Email_Exfiltration)
 11. [Project 11: Ransomware Simulator](./Project_11_Ransomeware_Simulator)
 12. [Project 11 (Advanced): Ransomware Simulator v2](./Project_11_Ransomeware_Simulator2)
 13. [Project 12: Network Scanner](./Project_12_Network_Scanner)
@@ -45,8 +69,8 @@ The goal is to practice offensive and defensive security concepts through practi
 15. [Project 13 (v2): Deauth Detector 2](./Project_13_Deauth_Detector2)
 16. [Project 14: Packet Crafting Engine](./Project_14_Packet_Crafting_Engine)
 17. [Project 14 (Interactive): Packet Crafting Engine 2](./Project_14_Packet_Crafting_Engine2)
-18. [Project 15: DNS Spoof Detector and DNS Rebinding Detector](./Project_15_DNS_Spoof_Detector_And_DNS_Rebinding_Detector)
-19. [Project 16: Process Monitor and Anti-Debugging Detector](./Project_16_Process_Monitor_Anti-Debugging_Detector)
+18. [Project 15: DNS Spoof + DNS Rebinding Detector](./Project_15_DNS_Spoof_Detector_And_DNS_Rebinding_Detector)
+19. [Project 16: Process Monitor + Anti-Debugging Detector](./Project_16_Process_Monitor_Anti-Debugging_Detector)
 20. [Project 17: Reverse Shell with Full Interactive TTY](./Project_17_Reverse_Shell_with_full_Interactive_TTY)
 21. [Project 18: Steganography Tool](./Project_18_Steganography_Tool)
 22. [Project 19: Memory Forensics Analyzer](./Project_19_Memory_Forensics_Analyzer)
@@ -59,30 +83,67 @@ The goal is to practice offensive and defensive security concepts through practi
 29. [Project 26: Multi-Threaded Port Scanner](./Project_26_Multi-Threaded_Port_Scanner)
 30. [Project 27: File Integrity Monitoring](./Project_27_File_Integrity_Monitoring)
 31. [Project 28: RAT](./Project_28_RAT)
-32. [Project 29: Blockchain Explorer and Smart Contract Scanner](./Project_29_Blockchain_Explorer_And_Smart_Contract_Scanner)
+32. [Project 29: Blockchain Explorer + Smart Contract Scanner](./Project_29_Blockchain_Explorer_And_Smart_Contract_Scanner)
 33. [Project 30: Dark Web Scraper](./Project_30_Dark_Web_Scraper)
 34. [Project 31: Antivirus Evasion Crypter](./Project_31_Antivirus_Evasion_Crypter)
 35. [Project 32: Cloud Security Scanner](./Project_32_Cloud_Security_Scanner)
 36. [Project 33: Password Cracker](./Project_33_Password_Cracker)
 37. [Project 34: IoT Scanner](./Project_34_IoT_Scanner)
-38. [Project 35: PE ELF Analysis Tool](./Project_35_PE_ELF_Analysis_Tool)
+38. [Project 35: PE/ELF Analysis Tool](./Project_35_PE_ELF_Analysis_Tool)
 39. [Project 36: SQL Injection Exploitation Tool](./Project_36_SQL_Injection_Exploitation_Tool)
 
 ---
 
 ## ⚙️ Quick Start
 
+### 1) Clone Repository
+
 ```bash
 git clone https://github.com/abdulsalam401/Ethical-Hacking-100-Projects-Challenge.git
 cd Ethical-Hacking-100-Projects-Challenge
+```
+
+### 2) Create Virtual Environment
+
+```bash
 python -m venv venv
 ```
 
-Install common dependencies:
+Activate:
+
+- **Windows (PowerShell/CMD):** `venv\Scripts\activate`
+- **Linux/macOS:** `source venv/bin/activate`
+
+### 3) Install Common Dependencies
 
 ```bash
 pip install scapy cryptography requests paramiko dnslib web3 psutil colorama pyperclip beautifulsoup4 flask pycryptodome pillow pefile pyelftools
 ```
+
+---
+
+## 🧭 Learning Path Suggestion
+
+If you are new, a good progression is:
+
+1. Network fundamentals projects (Packet Sniffer, Port Scanner, Network Scanner)
+2. Web security projects (Crawler, SQL Scanner, WAF)
+3. Forensics/monitoring projects (Process Monitor, Memory Forensics, FIM)
+4. Advanced simulation projects (RAT, Crypter, Reverse Shell)
+
+---
+
+## ⚠️ Ethical & Legal Notice
+
+This repository is intended strictly for:
+
+- Cybersecurity education
+- Defensive security research
+- Authorized penetration testing labs
+
+❌ Do **not** run these tools against systems/networks without explicit written authorization.
+
+The maintainer is not responsible for misuse.
 
 ---
 
@@ -97,4 +158,8 @@ pip install scapy cryptography requests paramiko dnslib web3 psutil colorama pyp
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+This repository is licensed under the [MIT License](LICENSE).
+
+---
+
+<p align="center"><i>Built with 💻 + 🛡️ for ethical security learning.</i></p>
