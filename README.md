@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Progress-42%20%2F%20100-0ea5e9?style=flat-square" alt="Progress" />
+  <img src="https://img.shields.io/badge/Progress-43%20%2F%20100-0ea5e9?style=flat-square" alt="Progress" />
 </p>
 
 <p align="center"><b>Hands-on cybersecurity projects for practical ethical hacking and defensive security learning.</b></p>
@@ -94,6 +94,7 @@ Each project focuses on real cybersecurity concepts such as:
 40. [Project 37: WAF Evasion Tool](./Project_37_Bypass_Detection_WAF_Evasion_Tool)
 41. [Project 38: Auto-Recon Framework](./Project_38_Auto-Recon_Framework)
 42. [Project 39: Network Traffic Analyzer](./Project_39_Network_Trafic_Analyzer)
+43. [Project 40: YARA Rule Engine](./Project_40_YARA_Rule_Engine_Malware_Signature_Scanner)
 
 ---
 
